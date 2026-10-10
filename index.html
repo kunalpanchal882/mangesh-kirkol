@@ -104,47 +104,50 @@
   </header>
   <!-- END: MainHeader -->
   <!-- BEGIN: HeroSection -->
-  <section class="relative pt-6 pb-6 border-b border-brand-border overflow-hidden" data-purpose="hero-banner" id="home">
-    <div class="max-w-7xl mx-auto px-6 relative flex flex-col justify-between min-h-[750px] lg:min-h-[860px]">
+  <section class="relative pt-3 sm:pt-6 pb-6 border-b border-brand-border overflow-hidden" data-purpose="hero-banner" id="home">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 relative flex flex-col justify-between min-h-[580px] sm:min-h-[760px] lg:min-h-[860px]">
       <!-- Top Eyebrow -->
       <div class="relative z-10 pt-1">
-        <span class="text-[12px] font-black tracking-widest text-brand-charcoal uppercase">
+        <span class="text-[10px] sm:text-[12px] font-black tracking-widest text-brand-charcoal uppercase">
           STAND-UP COMEDY
         </span>
       </div>
-      <!-- Massive Background Typography (Stacked 2 Lines) -->
-      <div class="absolute inset-x-0 top-12 lg:top-14 flex flex-col items-center select-none pointer-events-none z-0">
+
+      <!-- Massive Background Typography (Stacked 2 Lines) - BEHIND CHARACTER (z-0) -->
+      <div class="absolute inset-x-0 top-10 sm:top-12 lg:top-14 flex flex-col items-center select-none pointer-events-none z-0">
         <div
-          class="font-poster text-[21vw] lg:text-[255px] text-brand-red text-center leading-[0.79] tracking-[-0.04em]">
+          class="font-poster text-[19vw] lg:text-[255px] text-brand-red text-center leading-[0.79] tracking-[-0.04em]">
           MANGESH
         </div>
         <div
-          class="font-poster text-[21vw] lg:text-[255px] text-brand-red text-center leading-[0.79] tracking-[-0.04em] -mt-2 lg:-mt-4">
+          class="font-poster text-[19vw] lg:text-[255px] text-brand-red text-center leading-[0.79] tracking-[-0.04em] -mt-1 sm:-mt-2 lg:-mt-4">
           KIRKOL
         </div>
       </div>
-      <!-- Cutout Comedian Image with Soft Contact Shadow -->
-      <div class="absolute inset-0 flex items-end justify-center pointer-events-none z-10 bottom-4 sm:bottom-8">
-        <div class="relative">
+
+      <!-- Cutout Comedian Image with Soft Contact Shadow - IN FRONT OF TEXT (z-10) -->
+      <div class="absolute inset-x-0 top-7 sm:top-10 lg:top-0 lg:inset-0 flex items-start lg:items-end justify-center pointer-events-none z-10 lg:bottom-8">
+        <div class="relative h-[270px] sm:h-[450px] lg:h-[735px]">
           <!-- Subtle contact shadow under sneakers -->
-          <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-48 sm:w-72 h-6 sm:h-8 bg-black/25 blur-md rounded-full"></div>
+          <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-36 sm:w-72 h-4 sm:h-8 bg-black/25 blur-md rounded-full"></div>
           <img alt="Mangesh Kirkol standing smiling"
-            class="h-[460px] sm:h-[620px] lg:h-[735px] object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.18)]"
+            class="h-full object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.18)]"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUbl3X6eok3dSw9I_n191hQKpmx866MwOIYFbtohzWpGO0bLuGXxhRBKtoT6cmSmKIs6TLct5Dz7RbgaobW_56GPkf4REtLj0NY7yczSPcdGl5G1v6uuUfzMZEay1Tr4ZFU5azLTM4mgm3-5D97c4gBRLkcUazb92Q8W2kXkzrSFmWOptmRwhheRw-gmAePiRKZLiFzaC_LSSTNPomVhNi6Z__xHrOv436EH7S06bh16v-OYQ1T5p0Bqd1lq9z7GvyZA">
         </div>
       </div>
-      <!-- Bottom Content Grid (Aligned left & right around cutout) -->
-      <div class="relative z-20 mt-auto pt-48 sm:pt-72 lg:pt-96 pb-6 grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-end">
+
+      <!-- Bottom Content Grid (Aligned left & right around cutout) - ABOVE LAYERS (z-20) -->
+      <div class="relative z-20 mt-auto pt-[275px] sm:pt-[455px] lg:pt-96 pb-4 sm:pb-6 grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-end">
         <!-- Left Column: Punchy Headline and CTAs -->
         <div class="md:col-span-5 max-w-sm lg:max-w-md">
-          <h1 class="font-condensed-bold text-2xl sm:text-3xl md:text-4xl text-brand-charcoal leading-[1.0] tracking-tight">
+          <h1 class="font-condensed-bold text-xl sm:text-3xl md:text-4xl text-brand-charcoal leading-[1.0] tracking-tight">
             COMEDY. CHAOS. GOOD STORIES.
           </h1>
           <p class="mt-2 text-xs sm:text-sm font-semibold text-brand-charcoal/80">
             Stand-up, live shows, and a little mango madness.
           </p>
-          <div class="mt-5 sm:mt-6 flex flex-wrap items-center gap-4 sm:gap-6">
-            <a class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white text-[10px] sm:text-[11px] font-extrabold uppercase px-5 sm:px-6 py-2.5 sm:py-3 rounded-md transition-all shadow-sm active:scale-95"
+          <div class="mt-4 sm:mt-6 flex flex-wrap items-center gap-2.5 sm:gap-6">
+            <a class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white text-[10px] sm:text-[11px] font-extrabold uppercase px-4 sm:px-6 py-2.5 sm:py-3 rounded-md transition-all shadow-sm active:scale-95"
               href="#contact">
               <span>BOOK A SHOW</span>
               <span class="text-xs sm:text-sm font-sans leading-none">→</span>
@@ -166,24 +169,24 @@
             </div>
             <div class="flex flex-col sm:flex-row sm:items-start justify-between border-t border-brand-border pt-3 gap-3">
               <div class="space-y-1">
-                <div class="text-xl sm:text-2xl font-black text-brand-charcoal tracking-tight font-sans leading-none">
+                <div class="text-lg sm:text-2xl font-black text-brand-charcoal tracking-tight font-sans leading-none">
                   11 OCTOBER 2026
                 </div>
                 <div class="text-xs font-bold text-brand-muted tracking-wide pt-0.5">
                   12:00 AM
                 </div>
-                <div class="pt-2 flex items-start gap-1.5 text-[11px] font-black uppercase leading-[1.25]">
+                <div class="pt-2 flex items-start gap-1.5 text-[10px] sm:text-[11px] font-black uppercase leading-[1.25]">
                   <span class="text-brand-red text-xs mt-0.5 leading-none">📍</span>
                   <div class="flex flex-col">
                     <span class="text-brand-charcoal">JAI JINENDRA</span>
                     <span class="text-brand-red font-black">ROOFTOP</span>
-                    <span class="text-brand-muted font-bold text-[10px]">DIVA BHOPAL</span>
+                    <span class="text-brand-muted font-bold text-[9px] sm:text-[10px]">DIVA BHOPAL</span>
                   </div>
                 </div>
               </div>
               <!-- Right Number Badge -->
               <div class="border-t sm:border-t-0 sm:border-l border-brand-border pt-2 sm:pt-0 pl-0 sm:pl-6 flex flex-row sm:flex-col items-center justify-start sm:justify-center gap-2 sm:gap-0">
-                <span class="font-poster text-5xl sm:text-7xl lg:text-8xl text-brand-red leading-none font-bold">1</span>
+                <span class="font-poster text-4xl sm:text-7xl lg:text-8xl text-brand-red leading-none font-bold">1</span>
                 <span class="font-poster text-xs sm:text-base text-brand-red tracking-wider -mt-0.5">SHOW</span>
               </div>
             </div>
@@ -192,10 +195,10 @@
       </div>
       <!-- Hero Sub-bar Indicator -->
       <div
-        class="relative z-20 border-t border-brand-border pt-4 flex items-center justify-between text-[11px] font-bold uppercase tracking-widest text-brand-charcoal">
-        <div class="">MANGESHIANS.COM</div>
+        class="relative z-20 border-t border-brand-border pt-3 sm:pt-4 flex items-center justify-between text-[9px] sm:text-[11px] font-bold uppercase tracking-widest text-brand-charcoal">
+        <div>MANGESHIANS.COM</div>
         <a class="flex items-center gap-1.5 hover:text-brand-red transition-colors" href="#about">
-          <span class="">SCROLL TO LAUGH</span>
+          <span>SCROLL TO LAUGH</span>
           <span class="text-xs font-sans">↓</span>
         </a>
       </div>
@@ -214,24 +217,24 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         <!-- Left: Bio & CTA -->
         <div class="lg:col-span-5 max-w-md">
-          <h2 class="font-poster text-6xl sm:text-7xl lg:text-[76px] text-brand-charcoal leading-[0.88]">
+          <h2 class="font-poster text-4xl sm:text-6xl lg:text-[76px] text-brand-charcoal leading-[0.88]">
             THE GUY BEHIND <br>
             <span class="text-brand-red">THE JOKES.</span>
           </h2>
-          <p class="mt-6 text-sm sm:text-base text-brand-charcoal/90 font-medium leading-relaxed">
+          <p class="mt-4 sm:mt-6 text-xs sm:text-base text-brand-charcoal/90 font-medium leading-relaxed">
             A stand-up comedian, storyteller and an observer of the most weirdly interesting things around us.
           </p>
-          <div class="mt-8">
-            <a class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white text-[11px] font-extrabold uppercase px-6 py-3.5 rounded-md transition-all shadow-sm active:scale-95"
+          <div class="mt-6 sm:mt-8">
+            <a class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white text-[10px] sm:text-[11px] font-extrabold uppercase px-5 sm:px-6 py-3 rounded-md transition-all shadow-sm active:scale-95"
               href="#contact">
-              <span class="">BOOK A SHOW</span>
-              <span class="text-sm font-sans leading-none">→</span>
+              <span>BOOK A SHOW</span>
+              <span class="text-xs sm:text-sm font-sans leading-none">→</span>
             </a>
           </div>
         </div>
         <!-- Center: Comedian Cutout with Red Energetic Swoosh & Accent Lines -->
         <div class="lg:col-span-4 relative flex justify-center py-4">
-          <div class="relative w-72 h-[340px] sm:w-80 sm:h-[380px] flex items-center justify-center">
+          <div class="relative w-60 h-[300px] sm:w-80 sm:h-[380px] flex items-center justify-center">
             <!-- Dynamic Red Brush Swoosh shape in background -->
             <svg class="absolute inset-0 w-full h-full -z-0 -rotate-6" fill="none" viewBox="0 0 320 380"
               xmlns="http://www.w3.org/2000/svg">
@@ -253,30 +256,30 @@
         </div>
         <!-- Right: Editorial Quote -->
         <div class="lg:col-span-3 lg:pl-6">
-          <div class="text-brand-red font-serif text-5xl font-black leading-none mb-3">“</div>
-          <blockquote class="font-poster text-3xl sm:text-4xl text-brand-charcoal leading-[0.92] tracking-tight">
+          <div class="text-brand-red font-serif text-4xl sm:text-5xl font-black leading-none mb-2 sm:mb-3">“</div>
+          <blockquote class="font-poster text-2xl sm:text-4xl text-brand-charcoal leading-[0.92] tracking-tight">
             SAME<br>
             PROBLEMS.<br>
             FUNNIER<br>
             PERSPECTIVE.
           </blockquote>
-          <div class="w-20 h-0.5 bg-brand-border mt-6"></div>
+          <div class="w-16 sm:w-20 h-0.5 bg-brand-border mt-4 sm:mt-6"></div>
         </div>
       </div>
     </div>
   </section>
   <!-- END: AboutSection -->
   <!-- BEGIN: JourneySection -->
-  <section class="py-20 border-b border-brand-border" data-purpose="career-milestones" id="journey">
-    <div class="max-w-7xl mx-auto px-6">
+  <section class="py-12 sm:py-20 border-b border-brand-border" data-purpose="career-milestones" id="journey">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <!-- Section Kicker -->
-      <div class="flex items-center gap-3 text-xs font-black tracking-widest text-brand-charcoal uppercase mb-8">
-        <span class="">JOURNEY</span>
+      <div class="flex items-center gap-3 text-xs font-black tracking-widest text-brand-charcoal uppercase mb-6 sm:mb-8">
+        <span>JOURNEY</span>
         <span class="w-8 h-[2px] bg-brand-charcoal"></span>
       </div>
       <!-- Section Title & Right Description -->
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
-        <h2 class="font-poster text-6xl sm:text-7xl text-brand-charcoal leading-[0.88]">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 mb-10 sm:mb-16">
+        <h2 class="font-poster text-4xl sm:text-6xl lg:text-7xl text-brand-charcoal leading-[0.88]">
           FROM RANDOM THOUGHTS<br>
           <span class="text-brand-red">TO REAL STAGE.</span>
         </h2>
