@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en" style="">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mangesh Kirkol — Stand-Up Comedy</title>
+  <!-- Tailwind CSS v3 with Plugins -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Google Fonts: Oswald for punchy heavy condensed typography, Inter for clean copy -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Oswald:wght@600;700;800;900&amp;display=swap"
+    rel="stylesheet">
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#D91A1A',
+              'red-dark': '#B81414',
+              cream: '#F4F0EC',
+              charcoal: '#111111',
+              muted: '#555555',
+              border: '#DDD8CE'
+            }
+          },
+          fontFamily: {
+            sans: ['"Inter"', 'system-ui', 'sans-serif'],
+            display: ['"Oswald"', 'Impact', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F4F0EC;
+      color: #111111;
+      overflow-x: hidden;
+    }
+
+    .font-poster {
+      font-family: 'Oswald', 'Impact', sans-serif;
+      text-transform: uppercase;
+      font-weight: 900;
+      line-height: 0.82;
+      letter-spacing: -0.025em;
+    }
+
+    .font-condensed-bold {
+      font-family: 'Oswald', 'Impact', sans-serif;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+  </style>
+</head>
+
+<body class="bg-brand-cream text-brand-charcoal selection:bg-brand-red selection:text-white antialiased">
+  <!-- BEGIN: MainHeader -->
+  <header class="sticky top-0 z-50 bg-brand-cream/95 backdrop-blur-md border-b border-brand-border/70"
+    data-purpose="site-navigation">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a aria-label="Mangesh Home" class="flex items-center group" href="#">
+        <span class="font-poster text-3xl tracking-tight text-brand-charcoal transition-colors">
+          MANGESH<span class="text-brand-red">.</span>
+        </span>
+      </a>
+      <!-- Desktop Navigation Menu -->
+      <nav
+        class="hidden md:flex items-center space-x-9 text-[11px] font-bold tracking-widest text-brand-charcoal uppercase">
+        <a class="relative pb-1 text-brand-charcoal hover:text-brand-red transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-brand-charcoal"
+          href="#home">HOME</a>
+        <a class="hover:text-brand-red transition-colors" href="#about">ABOUT</a>
+        <a class="hover:text-brand-red transition-colors" href="#journey">SHOWS</a>
+        <a class="hover:text-brand-red transition-colors" href="#contact">CONTACT</a>
+      </nav>
+      <!-- Header Action CTA -->
+      <div>
+        <a class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white text-[11px] font-black uppercase px-6 py-3 rounded-md transition-all active:scale-95 shadow-sm"
+          href="#contact">
+          <span class="">BOOK A SHOW</span>
+          <span class="text-sm font-sans leading-none">→</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- END: MainHeader -->
+  <!-- BEGIN: HeroSection -->
+  <section class="relative pt-6 pb-6 border-b border-brand-border overflow-hidden" data-purpose="hero-banner" id="home">
+    <div class="max-w-7xl mx-auto px-6 relative flex flex-col justify-between min-h-[750px] lg:min-h-[860px]">
+      <!-- Top Eyebrow -->
+      <div class="relative z-10 pt-1">
+        <span class="text-[12px] font-black tracking-widest text-brand-charcoal uppercase">
+          STAND-UP COMEDY
+        </span>
+      </div>
+      <!-- Massive Background Typography (Stacked 2 Lines) -->
+      <div class="absolute inset-x-0 top-12 lg:top-14 flex flex-col items-center select-none pointer-events-none z-0">
+        <div
+          class="font-poster text-[21vw] lg:text-[255px] text-brand-red text-center leading-[0.79] tracking-[-0.04em]">
+          MANGESH
+        </div>
+        <div
+          class="font-poster text-[21vw] lg:text-[255px] text-brand-red text-center leading-[0.79] tracking-[-0.04em] -mt-2 lg:-mt-4">
+          KIRKOL
+        </div>
+      </div>
+      <!-- Cutout Comedian Image with Soft Contact Shadow -->
+      <div class="absolute inset-0 flex items-end justify-center pointer-events-none z-10 bottom-8">
+        <div class="relative">
+          <!-- Subtle contact shadow under sneakers -->
+          <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-72 h-8 bg-black/25 blur-md rounded-full"></div>
+          <img alt="Mangesh Kirkol standing smiling"
+            class="h-[620px] lg:h-[735px] object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.18)]"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUbl3X6eok3dSw9I_n191hQKpmx866MwOIYFbtohzWpGO0bLuGXxhRBKtoT6cmSmKIs6TLct5Dz7RbgaobW_56GPkf4REtLj0NY7yczSPcdGl5G1v6uuUfzMZEay1Tr4ZFU5azLTM4mgm3-5D97c4gBRLkcUazb92Q8W2kXkzrSFmWOptmRwhheRw-gmAePiRKZLiFzaC_LSSTNPomVhNi6Z__xHrOv436EH7S06bh16v-OYQ1T5p0Bqd1lq9z7GvyZA">
+        </div>
+      </div>
+      <!-- Bottom Content Grid (Aligned left & right around cutout) -->
+      <div class="relative z-20 mt-auto pt-72 lg:pt-96 pb-6 grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+        <!-- Left Column: Punchy Headline and CTAs -->
+        <div class="md:col-span-5 max-w-sm lg:max-w-md">
+          <h1 class="font-condensed-bold text-3xl sm:text-4xl text-brand-charcoal leading-[1.0] tracking-tight">
+            COMEDY. CHAOS. GOOD STORIES.
+          </h1>
+          <p class="mt-2 text-sm font-semibold text-brand-charcoal/80">
+            Stand-up, live shows, and a little mango madness.
+          </p>
+          <div class="mt-6 flex flex-wrap items-center gap-6">
+            <a class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white text-[11px] font-extrabold uppercase px-6 py-3 rounded-md transition-all shadow-sm active:scale-95"
+              href="#contact">
+              <span class="">BOOK A SHOW</span>
+              <span class="text-sm font-sans leading-none">→</span>
+            </a>
+            <a class="inline-flex items-center gap-1.5 text-[11px] font-black uppercase text-brand-charcoal hover:text-brand-red tracking-wider border-b-2 border-brand-charcoal hover:border-brand-red pb-0.5 transition-colors"
+              href="#moments">
+              <span class="">VIEW GALLERY</span>
+              <span class="text-xs font-sans">↗</span>
+            </a>
+          </div>
+        </div>
+        <!-- Center Spacer for Person Image -->
+        <div class="hidden md:block md:col-span-2"></div>
+        <!-- Right Column: NEXT LIVE SHOW Widget -->
+        <div class="md:col-span-5 lg:col-span-5">
+          <div class="border-t border-brand-charcoal/80 pt-3">
+            <div class="text-[11px] font-black tracking-widest text-brand-charcoal uppercase mb-2.5">
+              NEXT LIVE SHOW
+            </div>
+            <div class="flex items-start justify-between border-t border-brand-border pt-4">
+              <div class="space-y-1">
+                <div class="text-2xl font-black text-brand-charcoal tracking-tight font-sans leading-none">
+                  11 OCTOBER 2026
+                </div>
+                <div class="text-xs font-bold text-brand-muted tracking-wide pt-0.5">
+                  12:00 AM
+                </div>
+                <div class="pt-3 flex items-start gap-1.5 text-[11px] font-black uppercase leading-[1.25]">
+                  <span class="text-brand-red text-xs mt-0.5 leading-none">📍</span>
+                  <div class="flex flex-col">
+                    <span class="text-brand-charcoal">JAI JINENDRA</span>
+                    <span class="text-brand-red font-black">ROOFTOP</span>
+                    <span class="text-brand-muted font-bold text-[10px]">DIVA BHOPAL</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Right Number Badge -->
+              <div class="border-l border-brand-border pl-6 flex flex-col items-center justify-center text-center">
+                <span class="block font-poster text-7xl lg:text-8xl text-brand-red leading-none font-bold">1</span>
+                <span class="block font-poster text-base text-brand-red tracking-wider -mt-1">SHOW</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Sub-bar Indicator -->
+      <div
+        class="relative z-20 border-t border-brand-border pt-4 flex items-center justify-between text-[11px] font-bold uppercase tracking-widest text-brand-charcoal">
+        <div class="">MANGESHIANS.COM</div>
+        <a class="flex items-center gap-1.5 hover:text-brand-red transition-colors" href="#about">
+          <span class="">SCROLL TO LAUGH</span>
+          <span class="text-xs font-sans">↓</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- END: HeroSection -->
+  <!-- BEGIN: AboutSection -->
+  <section class="py-20 border-b border-brand-border relative overflow-hidden" data-purpose="biography-section"
+    id="about">
+    <div class="max-w-7xl mx-auto px-6">
+      <!-- Section Kicker -->
+      <div class="flex items-center gap-3 text-xs font-black tracking-widest text-brand-charcoal uppercase mb-10">
+        <span class="">ABOUT</span>
+        <span class="w-8 h-[2px] bg-brand-charcoal"></span>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <!-- Left: Bio & CTA -->
+        <div class="lg:col-span-5 max-w-md">
+          <h2 class="font-poster text-6xl sm:text-7xl lg:text-[76px] text-brand-charcoal leading-[0.88]">
+            THE GUY BEHIND <br>
+            <span class="text-brand-red">THE JOKES.</span>
+          </h2>
+          <p class="mt-6 text-sm sm:text-base text-brand-charcoal/90 font-medium leading-relaxed">
+            A stand-up comedian, storyteller and an observer of the most weirdly interesting things around us.
+          </p>
+          <div class="mt-8">
+            <a class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white text-[11px] font-extrabold uppercase px-6 py-3.5 rounded-md transition-all shadow-sm active:scale-95"
+              href="#contact">
+              <span class="">BOOK A SHOW</span>
+              <span class="text-sm font-sans leading-none">→</span>
+            </a>
+          </div>
+        </div>
+        <!-- Center: Comedian Cutout with Red Energetic Swoosh & Accent Lines -->
+        <div class="lg:col-span-4 relative flex justify-center py-4">
+          <div class="relative w-72 h-[340px] sm:w-80 sm:h-[380px] flex items-center justify-center">
+            <!-- Dynamic Red Brush Swoosh shape in background -->
+            <svg class="absolute inset-0 w-full h-full -z-0 -rotate-6" fill="none" viewBox="0 0 320 380"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M45 220C20 180 30 110 85 65C140 20 220 30 250 85C275 130 230 180 180 200C120 225 90 280 130 330C165 375 225 365 255 330"
+                stroke="#D91A1A" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path>
+            </svg>
+            <!-- Comic Accent / Speed Marks /// -->
+            <div class="absolute top-14 right-4 z-20 flex gap-1.5 rotate-[25deg]">
+              <div class="w-1 h-5 bg-brand-charcoal rounded-full"></div>
+              <div class="w-1 h-7 bg-brand-charcoal rounded-full -mt-1.5"></div>
+              <div class="w-1 h-5 bg-brand-charcoal rounded-full"></div>
+            </div>
+            <!-- Comedian Cutout (Microphone photo cutout) -->
+            <img alt="Mangesh Kirkol"
+              class="relative z-10 w-full h-full object-contain drop-shadow-[0_15px_25px_rgba(0,0,0,0.15)]"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzI-5vSdMRVIwbii_Ff6W2EvIkNWICBX7jUq3qJV9v73u9yFxcAIc0oGAmez1EdU9RQWP9LyAKWpljJc91rj6_GdsLG7Xq6A3D-qA_cMQLOiUFEqufgMHe44OQQaZxBOefwOzqwrnB0wSxVeQEdD3SJayw1Mh5iPOWCD6cKShE_fMODkehgkkg3NqBH9NKKZjgo5WXl7iTIP44gcGkeA4RsvrQL2LmKcBuHniqL-nD9ZA-uaUHGNvZAUD2FRC5N5V6Wg">
+          </div>
+        </div>
+        <!-- Right: Editorial Quote -->
+        <div class="lg:col-span-3 lg:pl-6">
+          <div class="text-brand-red font-serif text-5xl font-black leading-none mb-3">“</div>
+          <blockquote class="font-poster text-3xl sm:text-4xl text-brand-charcoal leading-[0.92] tracking-tight">
+            SAME<br>
+            PROBLEMS.<br>
+            FUNNIER<br>
+            PERSPECTIVE.
+          </blockquote>
+          <div class="w-20 h-0.5 bg-brand-border mt-6"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: AboutSection -->
+  <!-- BEGIN: JourneySection -->
+  <section class="py-20 border-b border-brand-border" data-purpose="career-milestones" id="journey">
+    <div class="max-w-7xl mx-auto px-6">
+      <!-- Section Kicker -->
+      <div class="flex items-center gap-3 text-xs font-black tracking-widest text-brand-charcoal uppercase mb-8">
+        <span class="">JOURNEY</span>
+        <span class="w-8 h-[2px] bg-brand-charcoal"></span>
+      </div>
+      <!-- Section Title & Right Description -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <h2 class="font-poster text-6xl sm:text-7xl text-brand-charcoal leading-[0.88]">
+          FROM RANDOM THOUGHTS<br>
+          <span class="text-brand-red">TO REAL STAGE.</span>
+        </h2>
+        <p class="max-w-xs text-xs font-semibold text-brand-charcoal/80 leading-relaxed md:text-left">
+          It started with random thoughts, then open mics, and now real stages. Same guy — just louder.
+        </p>
+      </div>
+      <!-- Timeline Component -->
+      <div class="relative pt-4 pb-2">
+        <!-- Connecting Line -->
+        <div class="absolute top-[23px] left-2 right-2 h-[1.5px] bg-brand-charcoal/20 hidden md:block"></div>
+        <!-- Timeline Items Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-4 relative">
+          <!-- 2018 -->
+          <div class="relative">
+            <div class="w-3.5 h-3.5 rounded-full bg-brand-charcoal mb-4 relative z-10"></div>
+            <div class="font-poster text-2xl text-brand-charcoal leading-none">2018</div>
+            <div class="text-[11px] font-black uppercase tracking-wider text-brand-charcoal mt-1.5">FIRST JOKE</div>
+            <div class="text-xs font-medium text-brand-muted mt-0.5">In college.</div>
+          </div>
+          <!-- 2020 -->
+          <div class="relative">
+            <div class="w-3.5 h-3.5 rounded-full bg-brand-charcoal mb-4 relative z-10"></div>
+            <div class="font-poster text-2xl text-brand-charcoal leading-none">2020</div>
+            <div class="text-[11px] font-black uppercase tracking-wider text-brand-charcoal mt-1.5">OPEN MICS</div>
+            <div class="text-xs font-medium text-brand-muted mt-0.5">Tried it.</div>
+          </div>
+          <!-- 2022 -->
+          <div class="relative">
+            <div class="w-3.5 h-3.5 rounded-full bg-brand-charcoal mb-4 relative z-10"></div>
+            <div class="font-poster text-2xl text-brand-charcoal leading-none">2022</div>
+            <div class="text-[11px] font-black uppercase tracking-wider text-brand-charcoal mt-1.5">BIGGER STAGES</div>
+            <div class="text-xs font-medium text-brand-muted mt-0.5">More shows.</div>
+          </div>
+          <!-- 2024 -->
+          <div class="relative">
+            <div class="w-3.5 h-3.5 rounded-full bg-brand-charcoal mb-4 relative z-10"></div>
+            <div class="font-poster text-2xl text-brand-charcoal leading-none">2024</div>
+            <div class="text-[11px] font-black uppercase tracking-wider text-brand-charcoal mt-1.5">AUDIENCE LOVE</div>
+            <div class="text-xs font-medium text-brand-muted mt-0.5">Bigger crowds.</div>
+          </div>
+          <!-- 2026 -->
+          <div class="relative">
+            <div class="w-3.5 h-3.5 rounded-full bg-brand-red ring-4 ring-brand-red/20 mb-4 relative z-10"></div>
+            <div class="font-poster text-2xl text-brand-red leading-none">2026</div>
+            <div class="text-[11px] font-black uppercase tracking-wider text-brand-charcoal mt-1.5">NEXT CHAPTER</div>
+            <div class="text-xs font-medium text-brand-muted mt-0.5">Same madness.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: JourneySection -->
+  <!-- BEGIN: MomentsGallery -->
+  <section class="py-20 border-b border-brand-border" data-purpose="moments-gallery" id="moments">
+    <div class="max-w-7xl mx-auto px-6">
+      <!-- Section Kicker -->
+      <div class="flex items-center gap-3 text-xs font-black tracking-widest text-brand-charcoal uppercase mb-10">
+        <span class="">MOMENTS IN COMEDY</span>
+        <span class="w-8 h-[2px] bg-brand-charcoal"></span>
+      </div>
+      <!-- Bento-style Photo Mosaic matching IMAGE_3 -->
+      <div class="w-full rounded-md overflow-hidden bg-brand-charcoal border border-brand-border/70 shadow-sm"><img
+          alt="Moments in Comedy - Mangesh Kirkol live collage" class="w-full h-auto object-cover block"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0NsHrGn0uBvYnzTLdSml5qTnePwijpXQkv0akSTFMfsyjmbWNSCBCxHGrfUnHoP6_IxiB9AC1tFz19pAeMotuJgUfBCcr3ZNm4jQYjpkbAI21G3XR0WIdUAdxI7Pft9X8y3DfmhuKeTiR3WYTrR-IeYfQ9tI-ywkj-RIs_YlchXmdBlN592OGNSDeyU1h18BgXkhCvKNduSS7FDLI8n7xuNHBngk8LNDDtuiH018dhcvpWcS9nwJQRZqV_JXb15slhg">
+      </div>
+    </div>
+  </section>
+  <!-- END: MomentsGallery -->
+  <!-- BEGIN: CallToActionBanner -->
+  <section class="bg-brand-red text-white py-14" data-purpose="booking-callout" id="contact">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+        <!-- Left: Kicker & Giant Heading with Arrow -->
+        <div>
+          <span class="block text-[11px] font-black tracking-widest uppercase text-white/90 mb-1">
+            BRING THE LAUGHTER TO YOUR CITY
+          </span>
+          <a class="font-poster text-6xl sm:text-7xl lg:text-8xl tracking-tight text-white hover:text-brand-charcoal transition-colors inline-flex items-center gap-4 leading-none"
+            href="mailto:booking@mangeshians.com">
+            <span class="">BOOK A SHOW</span>
+            <span class="text-4xl sm:text-6xl font-sans leading-none">↗</span>
+          </a>
+        </div>
+        <!-- Right: Text descriptor and white pill button -->
+        <div class="border-t lg:border-t-0 lg:border-l border-white/25 pt-6 lg:pt-0 lg:pl-12 max-w-sm">
+          <p class="text-xs sm:text-sm font-semibold text-white/95 leading-snug mb-5">
+            College events, corporate shows, private gigs or just an excuse to laugh — I'm in.
+          </p>
+          <a class="inline-flex items-center gap-2 bg-white hover:bg-brand-cream text-brand-charcoal text-[11px] font-black uppercase px-7 py-3 rounded-md transition-all shadow active:scale-95"
+            href="mailto:booking@mangeshians.com">
+            <span class="">GET IN TOUCH</span>
+            <span class="text-sm font-sans leading-none">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: CallToActionBanner -->
+  <!-- BEGIN: MainFooter -->
+  <footer class="bg-brand-cream text-brand-charcoal py-10" data-purpose="site-footer">
+    <div class="max-w-7xl mx-auto px-6">
+      <!-- Top Row: Brand Info, Nav Links, Social Icons -->
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-8">
+        <!-- Brand Info -->
+        <div>
+          <a class="font-poster text-3xl tracking-tight text-brand-charcoal" href="#">
+            MANGESH<span class="text-brand-red">.</span>
+          </a>
+          <p class="text-[11px] font-bold text-brand-muted mt-0.5">
+            Comedy. Chaos. Good Stories.
+          </p>
+        </div>
+        <!-- Navigation Links -->
+        <nav class="flex flex-wrap items-center gap-6 sm:gap-10 text-[11px] font-bold tracking-widest uppercase">
+          <a class="hover:text-brand-red transition-colors" href="#home">HOME</a>
+          <a class="hover:text-brand-red transition-colors" href="#about">ABOUT</a>
+          <a class="hover:text-brand-red transition-colors" href="#journey">SHOWS</a>
+          <a class="hover:text-brand-red transition-colors" href="#contact">CONTACT</a>
+        </nav>
+        <!-- Social Media Links -->
+        <div class="flex items-center space-x-5 text-brand-charcoal">
+          <!-- Instagram -->
+          <a aria-label="Instagram" class="hover:text-brand-red transition-colors" href="https://instagram.com"
+            rel="noopener noreferrer" target="_blank">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+              </path>
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a aria-label="YouTube" class="hover:text-brand-red transition-colors" href="https://youtube.com"
+            rel="noopener noreferrer" target="_blank">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
+              </path>
+            </svg>
+          </a>
+          <!-- X (Twitter) -->
+          <a aria-label="X Twitter" class="hover:text-brand-red transition-colors" href="https://twitter.com"
+            rel="noopener noreferrer" target="_blank">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+              </path>
+            </svg>
+          </a>
+          <!-- Spotify -->
+          <a aria-label="Spotify" class="hover:text-brand-red transition-colors" href="https://spotify.com"
+            rel="noopener noreferrer" target="_blank">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.495 17.306c-.215.353-.674.464-1.026.249-2.812-1.718-6.353-2.106-10.523-1.154-.403.091-.806-.157-.899-.56-.091-.403.157-.806.56-.899 4.568-1.042 8.49-.604 11.64 1.327.353.215.464.674.248 1.026v.011zm1.464-3.259c-.27.441-.849.58-1.29.31-3.22-1.979-8.128-2.55-11.936-1.393-.497.151-1.026-.134-1.176-.631-.151-.497.134-1.026.631-1.176 4.356-1.322 9.774-.682 13.46 1.583.441.27.58.849.311 1.29v.017zm.126-3.41c-3.861-2.292-10.238-2.504-13.916-1.388-.592.179-1.22-.163-1.4-.755-.179-.592.163-1.22.755-1.4 4.232-1.285 11.276-1.037 15.727 1.605.534.316.708 1.008.392 1.542-.317.534-1.008.708-1.542.392l-.016.004z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- Bottom Credits / Back to top -->
+      <div
+        class="border-t border-brand-border pt-6 flex items-center justify-between text-[11px] font-bold uppercase tracking-widest text-brand-charcoal">
+        <div class="whitespace-nowrap">MANGESHIANS.COM</div>
+        <a class="flex items-center gap-1.5 hover:text-brand-red transition-colors whitespace-nowrap" href="#home">
+          <span class="">SCROLL TO LAUGH</span>
+          <span class="text-xs font-sans">↑</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- END: MainFooter -->
+
+  <!-- BEGIN: BookingModal -->
+  <div id="booking-modal"
+    class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/60 backdrop-blur-xs p-0 sm:p-4 overflow-y-auto"
+    role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div
+      class="bg-[#ECECE6] text-[#111111] border border-[#111111] rounded-none shadow-2xl w-full min-h-screen sm:min-h-0 sm:h-auto sm:max-w-lg max-h-none sm:max-h-[92vh] overflow-y-auto flex flex-col p-6 sm:p-8 relative">
+
+      <!-- Modal Close Button -->
+      <button id="close-modal-btn" type="button" aria-label="Close modal"
+        class="absolute top-4 right-4 text-[#111111] hover:text-[#D70F14] text-2xl font-bold p-2 leading-none transition-colors cursor-pointer">
+        ✕
+      </button>
+
+      <!-- Modal View 1: Booking Form -->
+      <div id="modal-form-view">
+        <!-- Heading & Event Summary -->
+        <div class="mb-6 border-b border-[#111111]/20 pb-4 pr-8">
+          <span class="text-[10px] font-black tracking-widest text-[#D70F14] uppercase block mb-1">LIVE SHOW
+            REGISTRATION</span>
+          <h2 id="modal-title" class="font-poster text-4xl sm:text-5xl text-[#111111] leading-none uppercase">BOOK YOUR
+            SEAT</h2>
+          <div class="mt-2 text-xs font-bold text-[#555555] tracking-wide">
+            <span class="text-[#111111] font-extrabold uppercase">Mangesh Kirkol – Taste Mango Juice Night</span>
+            <div class="text-[11px] text-[#111111] mt-1 font-mono">📅 11 October 2026 | 🕛 12:00 AM | 📍 Jai Jinendra
+              Rooftop, Diva Bhopal</div>
+          </div>
+        </div>
+
+        <!-- General Error Message Banner -->
+        <div id="general-error-msg"
+          class="hidden mb-4 p-3 bg-red-100 border border-[#D70F14] text-[#D70F14] text-xs font-bold uppercase tracking-wider">
+          Something went wrong. Please try again.
+        </div>
+
+        <!-- Form -->
+        <form id="booking-form" novalidate class="space-y-5">
+          <!-- Field 1: Name -->
+          <div>
+            <label for="user_name" class="block text-[11px] font-black uppercase tracking-widest text-[#111111] mb-1">
+              NAME <span class="text-[#D70F14]">*</span>
+            </label>
+            <input type="text" id="user_name" name="name" placeholder="Enter your full name"
+              class="w-full bg-transparent border-b border-[#111111] py-2 px-1 text-sm font-semibold text-[#111111] placeholder:text-gray-400 focus:outline-none focus:border-[#D70F14] rounded-none transition-colors" />
+            <p id="name-error" class="hidden text-xs text-[#D70F14] font-bold mt-1 tracking-tight"></p>
+          </div>
+
+          <!-- Field 2: Email -->
+          <div>
+            <label for="user_email" class="block text-[11px] font-black uppercase tracking-widest text-[#111111] mb-1">
+              EMAIL <span class="text-[#D70F14]">*</span>
+            </label>
+            <input type="email" id="user_email" name="email" placeholder="name@example.com"
+              class="w-full bg-transparent border-b border-[#111111] py-2 px-1 text-sm font-semibold text-[#111111] placeholder:text-gray-400 focus:outline-none focus:border-[#D70F14] rounded-none transition-colors" />
+            <p id="email-error" class="hidden text-xs text-[#D70F14] font-bold mt-1 tracking-tight"></p>
+          </div>
+
+          <!-- Field 3: Mobile Number -->
+          <div>
+            <label for="user_mobile" class="block text-[11px] font-black uppercase tracking-widest text-[#111111] mb-1">
+              MOBILE NUMBER <span class="text-[#D70F14]">*</span>
+            </label>
+            <input type="tel" id="user_mobile" name="mobile" maxlength="10"
+              placeholder="10-digit Indian number (digits only, 6-9)"
+              class="w-full bg-transparent border-b border-[#111111] py-2 px-1 text-sm font-semibold text-[#111111] placeholder:text-gray-400 focus:outline-none focus:border-[#D70F14] rounded-none transition-colors" />
+            <p id="mobile-error" class="hidden text-xs text-[#D70F14] font-bold mt-1 tracking-tight"></p>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-2">
+            <button type="submit" id="submit-btn"
+              class="w-full bg-[#D70F14] hover:bg-[#B81414] text-white font-poster text-lg tracking-wider uppercase py-3.5 px-6 rounded-none transition-all duration-150 active:scale-[0.99] flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
+              <span id="submit-btn-text">CONFIRM BOOKING</span>
+              <span id="submit-btn-icon" class="font-sans">→</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Modal View 2: Success Confirmation & Ticket Preview -->
+      <div id="modal-success-view" class="hidden">
+        <!-- Success Header -->
+        <div class="text-center mb-6">
+          <div
+            class="inline-block bg-[#D70F14] text-white text-[10px] font-black tracking-widest uppercase px-3 py-1 mb-2">
+            CONFIRMATION
+          </div>
+          <h2 class="font-poster text-3xl sm:text-4xl text-[#111111] leading-none uppercase">BOOKING SUCCESSFUL!</h2>
+          <p class="mt-2 text-xs font-bold text-[#111111]">
+            Ticket sent to <span id="success-email-text" class="text-[#D70F14] underline font-black"></span>
+          </p>
+        </div>
+
+        <!-- Ticket Card Preview (Site Theme) -->
+        <div class="border border-[#111111] bg-white p-5 text-[#111111] relative shadow-sm">
+          <!-- Ticket Top Bar -->
+          <div class="flex items-center justify-between border-b border-[#111111] pb-3 mb-3">
+            <div>
+              <div class="font-poster text-xl tracking-tight text-[#111111]">
+                MANGESH<span class="text-[#D70F14]">.</span>
+              </div>
+              <div class="text-[9px] font-black uppercase tracking-widest text-[#555555]">
+                TASTE MANGO JUICE NIGHT
+              </div>
+            </div>
+            <div class="text-right">
+              <div class="text-[9px] font-black uppercase tracking-widest text-[#555555]">TICKET ID</div>
+              <div id="ticket-preview-id" class="font-poster text-xl text-[#D70F14] tracking-wider"></div>
+            </div>
+          </div>
+
+          <!-- Passenger Details -->
+          <div class="space-y-2 text-xs mb-4">
+            <div>
+              <span class="text-[9px] font-black uppercase tracking-widest text-[#555555] block">NAME</span>
+              <span id="ticket-preview-name" class="font-bold uppercase text-[#111111]"></span>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <div>
+                <span class="text-[9px] font-black uppercase tracking-widest text-[#555555] block">EMAIL</span>
+                <span id="ticket-preview-email" class="font-semibold text-gray-800 break-all text-[11px]"></span>
+              </div>
+              <div>
+                <span class="text-[9px] font-black uppercase tracking-widest text-[#555555] block">MOBILE</span>
+                <span id="ticket-preview-mobile" class="font-semibold text-gray-800 text-[11px]"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dashed Tear Line with side cuts -->
+          <div class="relative my-4 border-t-2 border-dashed border-[#111111]">
+            <div class="absolute -left-7 -top-2.5 w-4 h-5 bg-[#ECECE6] border-r border-[#111111] rounded-r-full"></div>
+            <div class="absolute -right-7 -top-2.5 w-4 h-5 bg-[#ECECE6] border-l border-[#111111] rounded-l-full"></div>
+          </div>
+
+          <!-- Event Details & QR Code -->
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-1">
+            <div class="space-y-2 text-left w-full sm:w-auto">
+              <div>
+                <span class="text-[9px] font-black uppercase tracking-widest text-[#555555] block">DATE & TIME</span>
+                <span class="font-bold text-[#111111] block text-xs">11 October 2026 | 12:00 AM</span>
+              </div>
+              <div>
+                <span class="text-[9px] font-black uppercase tracking-widest text-[#555555] block">VENUE</span>
+                <span class="font-bold text-[#111111] block text-xs">Jai Jinendra Rooftop, Diva Bhopal</span>
+              </div>
+              <div>
+                <span class="text-[9px] font-black uppercase tracking-widest text-[#555555] block">ADMIT</span>
+                <span class="inline-block bg-[#111111] text-white text-[10px] font-black uppercase px-2 py-0.5">1 Show /
+                  1 Entry</span>
+              </div>
+            </div>
+
+            <!-- QR Code Container -->
+            <div class="flex flex-col items-center justify-center shrink-0">
+              <img id="ticket-preview-qr" src="" alt="Ticket QR Code"
+                class="w-28 h-28 border border-[#111111] p-1 bg-white object-contain" />
+              <span class="text-[8px] font-black tracking-widest uppercase text-[#555555] mt-1">SCAN AT ENTRY</span>
+            </div>
+          </div>
+
+          <!-- Footer inside ticket -->
+          <div class="mt-4 pt-2 border-t border-gray-200 text-center">
+            <span class="text-[9px] font-black uppercase tracking-widest text-[#555555]">SHOW THIS TICKET AT THE ENTRY •
+              MANGESHIANS.COM</span>
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <div class="mt-6">
+          <button id="close-success-btn" type="button"
+            class="w-full bg-[#111111] hover:bg-black text-white font-poster text-base tracking-wider uppercase py-3 px-4 rounded-none transition-colors cursor-pointer">
+            CLOSE PREVIEW
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END: BookingModal -->
+
+  <!-- BEGIN: Secret Papa Entry Dashboard View -->
+  <div id="papa-entry-view" class="fixed inset-0 z-[100] hidden bg-[#ECECE6] text-[#111111] overflow-y-auto font-sans p-4 sm:p-8">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Header Bar -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 border-[#111111] pb-6 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="bg-[#D70F14] text-white text-[10px] font-black tracking-widest uppercase px-2.5 py-0.5">SECRET ROUTE</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-[#555555]">ADMIN DASHBOARD</span>
+          </div>
+          <h1 class="font-poster text-4xl sm:text-6xl text-[#111111] leading-none uppercase">PAPA ENTRY</h1>
+          <p class="text-xs sm:text-sm font-semibold text-[#555555] mt-1">Live customer registration database &amp; EmailJS logs</p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <button id="papa-open-scanner" type="button" class="bg-[#D70F14] hover:bg-[#B81414] text-white text-xs font-black uppercase tracking-wider px-5 py-3 rounded-none transition-colors flex items-center gap-2 cursor-pointer active:scale-95 shadow-sm">
+            <span>📷</span> SCAN &amp; VERIFY TICKET
+          </button>
+          <button id="papa-export-csv" type="button" class="bg-[#111111] hover:bg-black text-white text-xs font-black uppercase tracking-wider px-5 py-3 rounded-none transition-colors flex items-center gap-2 cursor-pointer">
+            <span>📥</span> EXPORT CSV
+          </button>
+          <button id="papa-clear-all" type="button" class="bg-transparent hover:bg-red-100 text-[#D70F14] border border-[#D70F14] text-xs font-black uppercase tracking-wider px-4 py-3 rounded-none transition-colors cursor-pointer">
+            🗑 CLEAR ALL
+          </button>
+          <a href="#home" id="papa-exit-btn" class="bg-[#111111] hover:bg-black text-white text-xs font-black uppercase tracking-wider px-5 py-3 rounded-none transition-colors flex items-center gap-2">
+            <span>←</span> EXIT PAPA ENTRY
+          </a>
+        </div>
+      </div>
+
+      <!-- Stats Summary -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+        <div class="bg-white border border-[#111111] p-4 shadow-sm">
+          <span class="text-[10px] font-black tracking-widest uppercase text-[#555555] block mb-1">TOTAL REGISTERED</span>
+          <div id="papa-stat-count" class="font-poster text-4xl sm:text-5xl text-[#111111]">0</div>
+        </div>
+        <div class="bg-white border border-[#111111] p-4 shadow-sm">
+          <span class="text-[10px] font-black tracking-widest uppercase text-[#555555] block mb-1">CHECKED-IN (ADMITTED)</span>
+          <div id="papa-stat-admitted" class="font-poster text-4xl sm:text-5xl text-emerald-600">0</div>
+        </div>
+        <div class="bg-white border border-[#111111] p-4 shadow-sm">
+          <span class="text-[10px] font-black tracking-widest uppercase text-[#555555] block mb-1">PENDING ENTRY</span>
+          <div id="papa-stat-pending" class="font-poster text-4xl sm:text-5xl text-[#D70F14]">0</div>
+        </div>
+        <div class="bg-white border border-[#111111] p-4 shadow-sm">
+          <span class="text-[10px] font-black tracking-widest uppercase text-[#555555] block mb-1">UNIQUE EMAILS</span>
+          <div id="papa-stat-emails" class="font-poster text-4xl sm:text-5xl text-[#111111]">0</div>
+        </div>
+      </div>
+
+      <!-- Search & Filter Controls -->
+      <div class="bg-white border border-[#111111] p-4 mb-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+        <div class="w-full sm:w-96">
+          <input type="text" id="papa-search-input" placeholder="Search by Name, Email, Mobile or Ticket ID..." class="w-full bg-[#ECECE6] border border-[#111111] py-2.5 px-3 text-xs font-bold text-[#111111] placeholder:text-gray-500 focus:outline-none focus:border-[#D70F14] rounded-none" />
+        </div>
+        <div class="text-xs font-bold text-[#555555] uppercase tracking-wider">
+          Showing <span id="papa-filtered-count" class="text-[#111111] font-black">0</span> entries
+        </div>
+      </div>
+
+      <!-- Customer Database Table -->
+      <div class="bg-white border border-[#111111] overflow-x-auto shadow-sm">
+        <table class="w-full text-left border-collapse text-xs">
+          <thead>
+            <tr class="bg-[#111111] text-white uppercase text-[10px] tracking-widest">
+              <th class="py-3.5 px-4 font-black">#</th>
+              <th class="py-3.5 px-4 font-black">STATUS</th>
+              <th class="py-3.5 px-4 font-black">TICKET ID</th>
+              <th class="py-3.5 px-4 font-black">GUEST NAME</th>
+              <th class="py-3.5 px-4 font-black">EMAIL ADDRESS</th>
+              <th class="py-3.5 px-4 font-black">MOBILE NUMBER</th>
+              <th class="py-3.5 px-4 font-black">REGISTERED AT</th>
+              <th class="py-3.5 px-4 font-black text-right">ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody id="papa-guests-tbody" class="divide-y divide-gray-200 text-[#111111] font-medium">
+            <!-- Rows dynamically generated -->
+          </tbody>
+        </table>
+
+        <!-- Empty State -->
+        <div id="papa-empty-state" class="hidden py-16 text-center">
+          <div class="font-poster text-3xl text-gray-400 uppercase mb-2">NO REGISTRATIONS FOUND</div>
+          <p class="text-xs text-gray-500 font-semibold">Bookings made via the "BOOK A SHOW" modal will automatically appear here.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- END: Secret Papa Entry Dashboard View -->
+
+  <!-- BEGIN: QR Scanner & Ticket Verification Modal -->
+  <div id="qr-scanner-modal" class="fixed inset-0 z-[120] hidden flex items-center justify-center bg-black/75 backdrop-blur-xs p-3 sm:p-4 overflow-y-auto" role="dialog" aria-modal="true">
+    <div class="bg-[#ECECE6] text-[#111111] border border-[#111111] rounded-none shadow-2xl w-full max-w-lg overflow-y-auto flex flex-col p-5 sm:p-7 relative">
+      
+      <!-- Close Button -->
+      <button id="close-qr-scanner-btn" type="button" aria-label="Close scanner" class="absolute top-4 right-4 text-[#111111] hover:text-[#D70F14] text-2xl font-bold p-1 leading-none transition-colors cursor-pointer">
+        ✕
+      </button>
+
+      <!-- Header -->
+      <div class="mb-5 border-b border-[#111111]/20 pb-3 pr-8">
+        <span class="text-[10px] font-black tracking-widest text-[#D70F14] uppercase block mb-1">LIVE VERIFICATION</span>
+        <h2 class="font-poster text-3xl sm:text-4xl text-[#111111] leading-none uppercase">SCAN &amp; VERIFY TICKET</h2>
+        <p class="text-xs font-bold text-[#555555] mt-1">Scan attendee QR code with camera or manually enter Ticket ID below.</p>
+      </div>
+
+      <!-- Live Camera Scanner Box -->
+      <div class="mb-5">
+        <div id="qr-reader" class="w-full bg-black border border-[#111111] min-h-[240px] flex items-center justify-center text-white text-xs overflow-hidden">
+          <span class="p-4 text-center text-gray-400 font-mono">Initializing camera scanner...</span>
+        </div>
+        <p id="qr-camera-error" class="hidden text-xs text-[#D70F14] font-bold mt-2 bg-red-100 p-2.5 border border-[#D70F14]"></p>
+      </div>
+
+      <!-- Manual Ticket ID Input Form -->
+      <div class="border-t border-[#111111]/20 pt-4 mb-4">
+        <label for="manual-ticket-input" class="block text-[10px] font-black uppercase tracking-widest text-[#111111] mb-1.5">
+          MANUAL TICKET ID LOOKUP
+        </label>
+        <div class="flex gap-2">
+          <input type="text" id="manual-ticket-input" placeholder="e.g. MK-7F3K9Q" class="w-full bg-white border border-[#111111] py-2 px-3 text-xs font-mono font-bold text-[#111111] uppercase placeholder:text-gray-400 focus:outline-none focus:border-[#D70F14] rounded-none" />
+          <button id="manual-verify-btn" type="button" class="bg-[#111111] hover:bg-black text-white font-poster text-sm uppercase px-5 py-2 rounded-none transition-colors shrink-0 cursor-pointer">
+            VERIFY
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Verification Result Area -->
+      <div id="verification-result-box" class="hidden">
+        <!-- Verification card dynamically injected here -->
+      </div>
+
+    </div>
+  </div>
+  <!-- END: QR Scanner & Ticket Verification Modal -->
+
+  <!-- HTML5 QR Code Scanner Library SDK -->
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script>
+    // EmailJS Configuration Constants (Replace with your actual keys from EmailJS dashboard)
+    const EMAILJS_SERVICE_ID = "service_zvc51x8";
+    const EMAILJS_TEMPLATE_ID = "template_6zb1hri";
+    const EMAILJS_PUBLIC_KEY = "ZDKZRKbUQsJ7Q1G9H";
+
+    // Event Details
+    const EVENT_INFO = {
+      event_name: "Mangesh Kirkol – Taste Mango Juice Night",
+      date: "11 October 2026",
+      time: "12:00 AM",
+      venue: "Jai Jinendra Rooftop, Diva Bhopal",
+      admit: "1 Show / 1 Entry"
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize EmailJS if public key is provided
+      if (typeof emailjs !== 'undefined' && EMAILJS_PUBLIC_KEY && EMAILJS_PUBLIC_KEY !== "YOUR_PUBLIC_KEY") {
+        emailjs.init(EMAILJS_PUBLIC_KEY);
+      }
+
+      const modal = document.getElementById('booking-modal');
+      const closeModalBtn = document.getElementById('close-modal-btn');
+      const closeSuccessBtn = document.getElementById('close-success-btn');
+      const bookingForm = document.getElementById('booking-form');
+
+      const modalFormView = document.getElementById('modal-form-view');
+      const modalSuccessView = document.getElementById('modal-success-view');
+      const generalErrorMsg = document.getElementById('general-error-msg');
+
+      const inputName = document.getElementById('user_name');
+      const inputEmail = document.getElementById('user_email');
+      const inputMobile = document.getElementById('user_mobile');
+
+      const errName = document.getElementById('name-error');
+      const errEmail = document.getElementById('email-error');
+      const errMobile = document.getElementById('mobile-error');
+
+      const submitBtn = document.getElementById('submit-btn');
+      const submitBtnText = document.getElementById('submit-btn-text');
+      const submitBtnIcon = document.getElementById('submit-btn-icon');
+
+      let isSubmitting = false;
+
+      // Attach click handlers to all "BOOK A SHOW" buttons across the page
+      document.querySelectorAll('a, button').forEach(el => {
+        const text = el.innerText || el.textContent;
+        if (text && text.trim().toUpperCase().includes('BOOK A SHOW')) {
+          el.addEventListener('click', function (e) {
+            e.preventDefault();
+            openModal();
+          });
+        }
+      });
+
+      function openModal() {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+        resetForm();
+      }
+
+      closeModalBtn.addEventListener('click', closeModal);
+      closeSuccessBtn.addEventListener('click', closeModal);
+
+      // Close on backdrop click
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      // Close on Escape key press
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeModal();
+        }
+      });
+
+      // Inline Validation Helper Functions
+      function validateName() {
+        const val = inputName.value.trim();
+        if (!val) {
+          showError(inputName, errName, 'Name is required.');
+          return false;
+        } else if (val.length < 2) {
+          showError(inputName, errName, 'Name must be at least 2 characters.');
+          return false;
+        } else {
+          hideError(inputName, errName);
+          return true;
+        }
+      }
+
+      function validateEmail() {
+        const val = inputEmail.value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!val) {
+          showError(inputEmail, errEmail, 'Email is required.');
+          return false;
+        } else if (!emailRegex.test(val)) {
+          showError(inputEmail, errEmail, 'Please enter a valid email format.');
+          return false;
+        } else {
+          // Check duplicate booking in localStorage
+          const storageKey = `booking_${val.toLowerCase()}_${EVENT_INFO.date}`;
+          if (localStorage.getItem(storageKey)) {
+            showError(inputEmail, errEmail, 'You already have a ticket for this show.');
+            return false;
+          }
+          hideError(inputEmail, errEmail);
+          return true;
+        }
+      }
+
+      function validateMobile() {
+        const val = inputMobile.value.trim();
+        const mobileRegex = /^[6-9]\d{9}$/;
+        if (!val) {
+          showError(inputMobile, errMobile, 'Mobile number is required.');
+          return false;
+        } else if (!mobileRegex.test(val)) {
+          showError(inputMobile, errMobile, 'Enter valid 10-digit Indian mobile number starting with 6-9.');
+          return false;
+        } else {
+          hideError(inputMobile, errMobile);
+          return true;
+        }
+      }
+
+      function showError(inputEl, errorEl, message) {
+        inputEl.classList.add('border-[#D70F14]');
+        errorEl.textContent = message;
+        errorEl.classList.remove('hidden');
+      }
+
+      function hideError(inputEl, errorEl) {
+        inputEl.classList.remove('border-[#D70F14]');
+        errorEl.textContent = '';
+        errorEl.classList.add('hidden');
+      }
+
+      // Trigger validation on blur
+      inputName.addEventListener('blur', validateName);
+      inputEmail.addEventListener('blur', validateEmail);
+      inputMobile.addEventListener('blur', validateMobile);
+
+      // Dynamic field formatting / error clearing on input
+      inputName.addEventListener('input', function () {
+        if (inputName.value.trim().length >= 2) hideError(inputName, errName);
+      });
+      inputEmail.addEventListener('input', function () {
+        hideError(inputEmail, errEmail);
+      });
+      inputMobile.addEventListener('input', function () {
+        inputMobile.value = inputMobile.value.replace(/\D/g, '').slice(0, 10);
+        hideError(inputMobile, errMobile);
+      });
+
+      // Generate ticket_id: "MK-" + 6 random uppercase alphanumeric characters
+      function generateTicketId() {
+        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        let result = '';
+        for (let i = 0; i < 6; i++) {
+          result += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        return 'MK-' + result;
+      }
+
+      function resetForm() {
+        bookingForm.reset();
+        hideError(inputName, errName);
+        hideError(inputEmail, errEmail);
+        hideError(inputMobile, errMobile);
+        generalErrorMsg.classList.add('hidden');
+        modalFormView.classList.remove('hidden');
+        modalSuccessView.classList.add('hidden');
+        setSubmittingState(false);
+      }
+
+      function setSubmittingState(loading) {
+        isSubmitting = loading;
+        if (loading) {
+          submitBtn.disabled = true;
+          submitBtnText.textContent = 'SENDING…';
+          submitBtnIcon.classList.add('hidden');
+        } else {
+          submitBtn.disabled = false;
+          submitBtnText.textContent = 'CONFIRM BOOKING';
+          submitBtnIcon.classList.remove('hidden');
+        }
+      }
+
+      // Submit handler
+      bookingForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        if (isSubmitting) return;
+
+        generalErrorMsg.classList.add('hidden');
+
+        const isNameValid = validateName();
+        const isEmailValid = validateEmail();
+        const isMobileValid = validateMobile();
+
+        if (!isNameValid || !isEmailValid || !isMobileValid) {
+          return;
+        }
+
+        const name = inputName.value.trim();
+        const email = inputEmail.value.trim();
+        const mobile = inputMobile.value.trim();
+
+        // Check duplicate booking in localStorage
+        const storageKey = `booking_${email.toLowerCase()}_${EVENT_INFO.date}`;
+        if (localStorage.getItem(storageKey)) {
+          showError(inputEmail, errEmail, 'You already have a ticket for this show.');
+          return;
+        }
+
+        setSubmittingState(true);
+
+        const ticketId = generateTicketId();
+        const qrData = `${ticketId}|${name}|${mobile}`;
+        const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(qrData)}`;
+
+        const ticketObject = {
+          ticket_id: ticketId,
+          name: name,
+          email: email,
+          mobile: mobile,
+          event_name: EVENT_INFO.event_name,
+          date: EVENT_INFO.date,
+          time: EVENT_INFO.time,
+          venue: EVENT_INFO.venue,
+          admit: EVENT_INFO.admit,
+          qr_url: qrUrl
+        };
+
+        const templateParams = {
+          to_name: name,
+          to_email: email,
+          email: email,
+          user_email: email,
+          mobile: mobile,
+          ticket_id: ticketId,
+          event_name: EVENT_INFO.event_name,
+          date: EVENT_INFO.date,
+          time: EVENT_INFO.time,
+          venue: EVENT_INFO.venue,
+          admit: EVENT_INFO.admit,
+          qr_url: qrUrl
+        };
+
+        try {
+          if (EMAILJS_SERVICE_ID !== "YOUR_SERVICE_ID" && EMAILJS_TEMPLATE_ID !== "YOUR_TEMPLATE_ID" && EMAILJS_PUBLIC_KEY !== "YOUR_PUBLIC_KEY") {
+            await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY);
+          } else {
+            // If keys are placeholders, log notice and simulate brief network latency so preview & local testing work cleanly
+            console.warn("EmailJS keys are placeholders. To send real emails, update EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, and EMAILJS_PUBLIC_KEY in index.html.");
+            await new Promise(resolve => setTimeout(resolve, 800));
+          }
+
+          // Save booking to localStorage to prevent duplicate booking
+          localStorage.setItem(storageKey, JSON.stringify(ticketObject));
+
+          // Save to global guests array for secret Papa Entry route
+          let currentGuests = getRegisteredGuests();
+          if (!currentGuests.some(g => g.ticket_id === ticketObject.ticket_id)) {
+            ticketObject.timestamp = new Date().toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' });
+            currentGuests.unshift(ticketObject);
+            localStorage.setItem('mangesh_registered_guests', JSON.stringify(currentGuests));
+          }
+
+          // Render Success Ticket Preview
+          document.getElementById('success-email-text').textContent = email;
+          document.getElementById('ticket-preview-id').textContent = ticketId;
+          document.getElementById('ticket-preview-name').textContent = name;
+          document.getElementById('ticket-preview-email').textContent = email;
+          document.getElementById('ticket-preview-mobile').textContent = mobile;
+          document.getElementById('ticket-preview-qr').src = qrUrl;
+
+          // Show success view
+          modalFormView.classList.add('hidden');
+          modalSuccessView.classList.remove('hidden');
+
+        } catch (err) {
+          console.error("Booking submission error:", err);
+          generalErrorMsg.textContent = "Something went wrong. Please try again.";
+          generalErrorMsg.classList.remove('hidden');
+        } finally {
+          setSubmittingState(false);
+        }
+      });
+    });
+
+    // --- SECRET PAPA ENTRY ROUTE & QR SCANNER LOGIC ---
+    let html5QrcodeScanner = null;
+
+    function extractTicketId(rawText) {
+      if (!rawText) return '';
+      const match = rawText.match(/MK-[A-Z0-9]{6}/i);
+      if (match) return match[0].toUpperCase();
+      return rawText.trim().toUpperCase();
+    }
+
+    function getRegisteredGuests() {
+      let guests = [];
+      try {
+        guests = JSON.parse(localStorage.getItem('mangesh_registered_guests') || '[]');
+      } catch (e) {
+        guests = [];
+      }
+
+      // Scan localStorage for any booking_* items that might not be in mangesh_registered_guests
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key && key.startsWith('booking_')) {
+          try {
+            const item = JSON.parse(localStorage.getItem(key));
+            if (item && item.ticket_id && !guests.some(g => g.ticket_id === item.ticket_id)) {
+              guests.push({
+                ...item,
+                timestamp: item.timestamp || 'Recorded'
+              });
+            }
+          } catch (err) {}
+        }
+      }
+      return guests;
+    }
+
+    function saveGuestsToStorage(guests) {
+      localStorage.setItem('mangesh_registered_guests', JSON.stringify(guests));
+    }
+
+    function renderPapaEntry() {
+      const papaView = document.getElementById('papa-entry-view');
+      if (!papaView) return;
+
+      const tbody = document.getElementById('papa-guests-tbody');
+      const emptyState = document.getElementById('papa-empty-state');
+      
+      const statCount = document.getElementById('papa-stat-count');
+      const statAdmitted = document.getElementById('papa-stat-admitted');
+      const statPending = document.getElementById('papa-stat-pending');
+      const statEmails = document.getElementById('papa-stat-emails');
+
+      const filteredCount = document.getElementById('papa-filtered-count');
+      const searchInput = document.getElementById('papa-search-input');
+
+      const guests = getRegisteredGuests();
+      const query = (searchInput ? searchInput.value : '').toLowerCase().trim();
+
+      const admittedCount = guests.filter(g => g.checked_in).length;
+      const pendingCount = guests.length - admittedCount;
+      const uniqueEmails = new Set(guests.map(g => g.email ? g.email.toLowerCase() : '')).size;
+
+      // Update Stats Dashboard
+      if (statCount) statCount.textContent = guests.length;
+      if (statAdmitted) statAdmitted.textContent = admittedCount;
+      if (statPending) statPending.textContent = pendingCount;
+      if (statEmails) statEmails.textContent = uniqueEmails;
+
+      const filtered = guests.filter(g => {
+        return (g.name && g.name.toLowerCase().includes(query)) ||
+               (g.email && g.email.toLowerCase().includes(query)) ||
+               (g.mobile && g.mobile.includes(query)) ||
+               (g.ticket_id && g.ticket_id.toLowerCase().includes(query));
+      });
+
+      if (filteredCount) filteredCount.textContent = filtered.length;
+
+      if (filtered.length === 0) {
+        if (tbody) tbody.innerHTML = '';
+        if (emptyState) emptyState.classList.remove('hidden');
+        return;
+      }
+
+      if (emptyState) emptyState.classList.add('hidden');
+      if (tbody) {
+        tbody.innerHTML = filtered.map((g, idx) => `
+          <tr class="hover:bg-amber-50/50 transition-colors border-b border-gray-200">
+            <td class="py-3 px-4 font-mono font-bold text-gray-500">${idx + 1}</td>
+            <td class="py-3 px-4">
+              ${g.checked_in ? `
+                <span class="inline-block bg-emerald-100 text-emerald-800 text-[10px] font-black uppercase px-2 py-0.5 border border-emerald-300">
+                  ✓ ADMITTED
+                  <span class="block text-[8px] text-emerald-600 font-mono font-normal">${g.checked_in_at || ''}</span>
+                </span>
+              ` : `
+                <span class="inline-block bg-amber-100 text-amber-800 text-[10px] font-black uppercase px-2 py-0.5 border border-amber-300">
+                  ⏳ PENDING
+                </span>
+              `}
+            </td>
+            <td class="py-3 px-4 font-poster text-base text-[#D70F14] tracking-wider">${g.ticket_id || 'N/A'}</td>
+            <td class="py-3 px-4 font-bold uppercase text-[#111111]">${g.name || 'N/A'}</td>
+            <td class="py-3 px-4 text-gray-800 font-mono">${g.email || 'N/A'}</td>
+            <td class="py-3 px-4 font-mono text-gray-800">${g.mobile || 'N/A'}</td>
+            <td class="py-3 px-4 text-gray-500 text-[11px] font-mono">${g.timestamp || '11 Oct 2026'}</td>
+            <td class="py-3 px-4 text-right space-x-1.5 whitespace-nowrap">
+              <button onclick="viewGuestTicket('${g.ticket_id}')" class="bg-[#111111] hover:bg-black text-white text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-none cursor-pointer">
+                TICKET
+              </button>
+              ${!g.checked_in ? `
+                <button onclick="markGuestAdmitted('${g.ticket_id}')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-none cursor-pointer">
+                  ADMIT
+                </button>
+              ` : ''}
+              <button onclick="deleteGuestRecord('${g.ticket_id}', '${g.email}')" class="bg-transparent hover:bg-red-100 text-[#D70F14] border border-[#D70F14] text-[10px] font-black uppercase px-2 py-1 rounded-none cursor-pointer">
+                DEL
+              </button>
+            </td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    function checkPapaRoute() {
+      const hash = window.location.hash;
+      const path = window.location.pathname;
+      const papaView = document.getElementById('papa-entry-view');
+      
+      const isPapaRoute = hash === '#papa-entry' || 
+                          hash === '#/papa-entry' || 
+                          hash.toLowerCase().includes('papa-entry') ||
+                          path.endsWith('/papa-entry');
+
+      if (isPapaRoute) {
+        if (papaView) papaView.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+        renderPapaEntry();
+      } else {
+        if (papaView) papaView.classList.add('hidden');
+        const bookingModal = document.getElementById('booking-modal');
+        const qrModal = document.getElementById('qr-scanner-modal');
+        if ((!bookingModal || bookingModal.classList.contains('hidden')) && (!qrModal || qrModal.classList.contains('hidden'))) {
+          document.body.style.overflow = '';
+        }
+      }
+    }
+
+    window.addEventListener('hashchange', checkPapaRoute);
+    window.addEventListener('load', checkPapaRoute);
+
+    // --- QR SCANNER MODAL CONTROLS ---
+    function openQrScannerModal() {
+      const qrModal = document.getElementById('qr-scanner-modal');
+      const resultBox = document.getElementById('verification-result-box');
+      const errBox = document.getElementById('qr-camera-error');
+      
+      if (!qrModal) return;
+
+      resultBox.classList.add('hidden');
+      resultBox.innerHTML = '';
+      errBox.classList.add('hidden');
+      qrModal.classList.remove('hidden');
+
+      // Initialize Html5Qrcode Camera Scanner
+      if (typeof Html5Qrcode !== 'undefined') {
+        if (html5QrcodeScanner) {
+          try { html5QrcodeScanner.stop(); } catch (e) {}
+        }
+        
+        html5QrcodeScanner = new Html5Qrcode("qr-reader");
+        html5QrcodeScanner.start(
+          { facingMode: "environment" },
+          { fps: 10, qrbox: { width: 220, height: 220 } },
+          (decodedText) => {
+            verifyTicketCode(decodedText);
+          },
+          () => {}
+        ).catch(err => {
+          console.warn("Camera access failed:", err);
+          errBox.textContent = "Camera access unavailable or blocked. Please use manual Ticket ID input below.";
+          errBox.classList.remove('hidden');
+        });
+      }
+    }
+
+    function closeQrScannerModal() {
+      const qrModal = document.getElementById('qr-scanner-modal');
+      if (qrModal) qrModal.classList.add('hidden');
+
+      if (html5QrcodeScanner) {
+        try {
+          html5QrcodeScanner.stop().then(() => {
+            html5QrcodeScanner.clear();
+          }).catch(() => {});
+        } catch (e) {}
+      }
+    }
+
+    function verifyTicketCode(rawCode) {
+      const ticketId = extractTicketId(rawCode);
+      const resultBox = document.getElementById('verification-result-box');
+      if (!resultBox) return;
+
+      const guests = getRegisteredGuests();
+      const guest = guests.find(g => g.ticket_id === ticketId || (g.ticket_id && g.ticket_id.toUpperCase() === ticketId));
+
+      resultBox.classList.remove('hidden');
+
+      if (!guest) {
+        // INVALID TICKET
+        resultBox.innerHTML = `
+          <div class="bg-red-50 border-2 border-[#D70F14] p-4 text-[#111111]">
+            <div class="font-poster text-2xl text-[#D70F14] uppercase flex items-center gap-2 leading-none mb-1">
+              <span>❌</span> INVALID TICKET
+            </div>
+            <p class="text-xs font-bold text-[#D70F14]">
+              Ticket ID <span class="font-mono text-sm underline">${ticketId || rawCode}</span> was NOT found in the database.
+            </p>
+          </div>
+        `;
+        return;
+      }
+
+      if (guest.checked_in) {
+        // ALREADY CHECKED IN
+        resultBox.innerHTML = `
+          <div class="bg-amber-50 border-2 border-amber-500 p-4 text-[#111111]">
+            <div class="font-poster text-2xl text-amber-700 uppercase flex items-center gap-2 leading-none mb-1">
+              <span>⚠️</span> ALREADY CHECKED IN
+            </div>
+            <p class="text-xs font-bold text-amber-800 mb-3">
+              This ticket was already scanned and admitted at <span class="font-mono">${guest.checked_in_at || 'earlier'}</span>.
+            </p>
+            <div class="bg-white border border-amber-300 p-3 text-xs space-y-1">
+              <div><span class="text-gray-500 font-bold uppercase text-[9px]">TICKET ID:</span> <span class="font-poster text-base text-[#D70F14]">${guest.ticket_id}</span></div>
+              <div><span class="text-gray-500 font-bold uppercase text-[9px]">GUEST NAME:</span> <span class="font-bold uppercase">${guest.name}</span></div>
+              <div><span class="text-gray-500 font-bold uppercase text-[9px]">MOBILE:</span> <span class="font-mono">${guest.mobile}</span></div>
+            </div>
+          </div>
+        `;
+        return;
+      }
+
+      // VALID & READY FOR ENTRY
+      resultBox.innerHTML = `
+        <div class="bg-emerald-50 border-2 border-emerald-600 p-4 text-[#111111]">
+          <div class="font-poster text-2xl text-emerald-700 uppercase flex items-center gap-2 leading-none mb-1">
+            <span>✅</span> VALID TICKET — ADMIT GUEST
+          </div>
+          <p class="text-xs font-semibold text-emerald-900 mb-3">
+            Ticket verified successfully. Ready for check-in.
+          </p>
+          <div class="bg-white border border-emerald-300 p-3 text-xs space-y-1 mb-3">
+            <div><span class="text-gray-500 font-bold uppercase text-[9px]">TICKET ID:</span> <span class="font-poster text-base text-[#D70F14]">${guest.ticket_id}</span></div>
+            <div><span class="text-gray-500 font-bold uppercase text-[9px]">GUEST NAME:</span> <span class="font-bold uppercase">${guest.name}</span></div>
+            <div><span class="text-gray-500 font-bold uppercase text-[9px]">EMAIL:</span> <span class="font-mono">${guest.email}</span></div>
+            <div><span class="text-gray-500 font-bold uppercase text-[9px]">MOBILE:</span> <span class="font-mono">${guest.mobile}</span></div>
+            <div><span class="text-gray-500 font-bold uppercase text-[9px]">PASS:</span> <span class="inline-block bg-[#111111] text-white text-[9px] font-bold uppercase px-1.5 py-0.5">1 Show / 1 Entry</span></div>
+          </div>
+          <button onclick="markGuestAdmitted('${guest.ticket_id}')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-poster text-base tracking-wider uppercase py-3 px-4 rounded-none transition-colors cursor-pointer shadow-sm">
+            CONFIRM CHECK-IN &amp; ADMIT GUEST
+          </button>
+        </div>
+      `;
+    }
+
+    window.markGuestAdmitted = function(ticketId) {
+      let guests = getRegisteredGuests();
+      const guest = guests.find(g => g.ticket_id === ticketId);
+      if (!guest) return;
+
+      const checkinTime = new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' }) + ', ' + new Date().toLocaleDateString('en-IN', { day: '2-digit', month: 'short' });
+      guest.checked_in = true;
+      guest.checked_in_at = checkinTime;
+
+      saveGuestsToStorage(guests);
+
+      // also update individual booking key
+      const storageKey = `booking_${(guest.email || '').toLowerCase()}_11 October 2026`;
+      localStorage.setItem(storageKey, JSON.stringify(guest));
+
+      renderPapaEntry();
+
+      const resultBox = document.getElementById('verification-result-box');
+      if (resultBox && !resultBox.classList.contains('hidden')) {
+        resultBox.innerHTML = `
+          <div class="bg-emerald-600 text-white p-4 border-2 border-emerald-700">
+            <div class="font-poster text-2xl uppercase flex items-center gap-2 leading-none mb-1">
+              <span>🎉</span> GUEST ADMITTED!
+            </div>
+            <p class="text-xs font-bold text-emerald-100">
+              Ticket <span class="font-mono text-sm">${ticketId}</span> (${guest.name}) has been checked in successfully at ${checkinTime}.
+            </p>
+          </div>
+        `;
+      }
+    };
+
+    // DOM Event Listeners for Scanner & Buttons
+    document.addEventListener('DOMContentLoaded', function() {
+      const openScannerBtn = document.getElementById('papa-open-scanner');
+      const closeScannerBtn = document.getElementById('close-qr-scanner-btn');
+      const manualVerifyBtn = document.getElementById('manual-verify-btn');
+      const manualInput = document.getElementById('manual-ticket-input');
+      
+      const searchInput = document.getElementById('papa-search-input');
+      const exportBtn = document.getElementById('papa-export-csv');
+      const clearBtn = document.getElementById('papa-clear-all');
+
+      if (openScannerBtn) openScannerBtn.addEventListener('click', openQrScannerModal);
+      if (closeScannerBtn) closeScannerBtn.addEventListener('click', closeQrScannerModal);
+
+      if (manualVerifyBtn && manualInput) {
+        manualVerifyBtn.addEventListener('click', function() {
+          const code = manualInput.value.trim();
+          if (code) verifyTicketCode(code);
+        });
+        manualInput.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') {
+            const code = manualInput.value.trim();
+            if (code) verifyTicketCode(code);
+          }
+        });
+      }
+
+      if (searchInput) searchInput.addEventListener('input', renderPapaEntry);
+
+      if (exportBtn) {
+        exportBtn.addEventListener('click', function() {
+          const guests = getRegisteredGuests();
+          if (guests.length === 0) {
+            alert("No registered guests to export.");
+            return;
+          }
+
+          let csv = "Ticket ID,Status,Checked-In At,Name,Email,Mobile,Registered At,Event,Venue\n";
+          guests.forEach(g => {
+            csv += `"${g.ticket_id || ''}","${g.checked_in ? 'ADMITTED' : 'PENDING'}","${g.checked_in_at || ''}","${(g.name || '').replace(/"/g, '""')}","${g.email || ''}","${g.mobile || ''}","${g.timestamp || ''}","${g.event_name || ''}","${g.venue || ''}"\n`;
+          });
+
+          const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+          const link = document.createElement("a");
+          link.href = URL.createObjectURL(blob);
+          link.setAttribute("download", `mangesh_guests_${new Date().toISOString().slice(0,10)}.csv`);
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+      }
+
+      if (clearBtn) {
+        clearBtn.addEventListener('click', function() {
+          if (confirm("Are you sure you want to delete ALL customer registration records?")) {
+            localStorage.removeItem('mangesh_registered_guests');
+            for (let i = localStorage.length - 1; i >= 0; i--) {
+              const key = localStorage.key(i);
+              if (key && key.startsWith('booking_')) {
+                localStorage.removeItem(key);
+              }
+            }
+            renderPapaEntry();
+          }
+        });
+      }
+    });
+
+    // Global Action Handlers for View & Delete
+    window.viewGuestTicket = function(ticketId) {
+      const guests = getRegisteredGuests();
+      const guest = guests.find(g => g.ticket_id === ticketId);
+      if (!guest) return;
+
+      const modal = document.getElementById('booking-modal');
+      const modalFormView = document.getElementById('modal-form-view');
+      const modalSuccessView = document.getElementById('modal-success-view');
+
+      document.getElementById('success-email-text').textContent = guest.email;
+      document.getElementById('ticket-preview-id').textContent = guest.ticket_id;
+      document.getElementById('ticket-preview-name').textContent = guest.name;
+      document.getElementById('ticket-preview-email').textContent = guest.email;
+      document.getElementById('ticket-preview-mobile').textContent = guest.mobile;
+      document.getElementById('ticket-preview-qr').src = guest.qr_url;
+
+      modalFormView.classList.add('hidden');
+      modalSuccessView.classList.remove('hidden');
+      modal.classList.remove('hidden');
+    };
+
+    window.deleteGuestRecord = function(ticketId, email) {
+      if (!confirm(`Delete ticket ${ticketId} for ${email}?`)) return;
+      
+      let guests = getRegisteredGuests();
+      guests = guests.filter(g => g.ticket_id !== ticketId);
+      localStorage.setItem('mangesh_registered_guests', JSON.stringify(guests));
+      
+      const storageKey = `booking_${(email || '').toLowerCase()}_11 October 2026`;
+      localStorage.removeItem(storageKey);
+
+      renderPapaEntry();
+    };
+  </script>
+
+</body>
+
+</html>
