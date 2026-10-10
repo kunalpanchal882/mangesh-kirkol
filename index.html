@@ -64,10 +64,10 @@
   <!-- BEGIN: MainHeader -->
   <header class="sticky top-0 z-50 bg-brand-cream/95 backdrop-blur-md border-b border-brand-border/70"
     data-purpose="site-navigation">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
       <!-- Brand Logo -->
       <a aria-label="Mangesh Home" class="flex items-center group" href="#">
-        <span class="font-poster text-3xl tracking-tight text-brand-charcoal transition-colors">
+        <span class="font-poster text-2xl sm:text-3xl tracking-tight text-brand-charcoal transition-colors">
           MANGESH<span class="text-brand-red">.</span>
         </span>
       </a>
@@ -80,14 +80,26 @@
         <a class="hover:text-brand-red transition-colors" href="#journey">SHOWS</a>
         <a class="hover:text-brand-red transition-colors" href="#contact">CONTACT</a>
       </nav>
-      <!-- Header Action CTA -->
-      <div>
-        <a class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white text-[11px] font-black uppercase px-6 py-3 rounded-md transition-all active:scale-95 shadow-sm"
+      <!-- Header Action CTA & Mobile Hamburger -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a class="inline-flex items-center gap-1.5 sm:gap-2 bg-brand-red hover:bg-brand-red-dark text-white text-[10px] sm:text-[11px] font-black uppercase px-3.5 sm:px-6 py-2.5 sm:py-3 rounded-md transition-all active:scale-95 shadow-sm"
           href="#contact">
-          <span class="">BOOK A SHOW</span>
-          <span class="text-sm font-sans leading-none">→</span>
+          <span>BOOK A SHOW</span>
+          <span class="text-xs sm:text-sm font-sans leading-none">→</span>
         </a>
+        <button id="mobile-menu-btn" type="button" aria-label="Toggle navigation menu"
+          class="md:hidden text-brand-charcoal hover:text-brand-red p-1 text-2xl focus:outline-none cursor-pointer leading-none">
+          ☰
+        </button>
       </div>
+    </div>
+    <!-- Mobile Dropdown Navigation Menu -->
+    <div id="mobile-nav-menu"
+      class="hidden md:hidden bg-brand-cream border-b border-brand-border px-6 py-4 space-y-3 font-bold tracking-widest text-xs uppercase shadow-md">
+      <a class="block py-1 hover:text-brand-red transition-colors" href="#home">HOME</a>
+      <a class="block py-1 hover:text-brand-red transition-colors" href="#about">ABOUT</a>
+      <a class="block py-1 hover:text-brand-red transition-colors" href="#journey">SHOWS</a>
+      <a class="block py-1 hover:text-brand-red transition-colors" href="#contact">CONTACT</a>
     </div>
   </header>
   <!-- END: MainHeader -->
@@ -112,34 +124,34 @@
         </div>
       </div>
       <!-- Cutout Comedian Image with Soft Contact Shadow -->
-      <div class="absolute inset-0 flex items-end justify-center pointer-events-none z-10 bottom-8">
+      <div class="absolute inset-0 flex items-end justify-center pointer-events-none z-10 bottom-4 sm:bottom-8">
         <div class="relative">
           <!-- Subtle contact shadow under sneakers -->
-          <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-72 h-8 bg-black/25 blur-md rounded-full"></div>
+          <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-48 sm:w-72 h-6 sm:h-8 bg-black/25 blur-md rounded-full"></div>
           <img alt="Mangesh Kirkol standing smiling"
-            class="h-[620px] lg:h-[735px] object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.18)]"
+            class="h-[460px] sm:h-[620px] lg:h-[735px] object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.18)]"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUbl3X6eok3dSw9I_n191hQKpmx866MwOIYFbtohzWpGO0bLuGXxhRBKtoT6cmSmKIs6TLct5Dz7RbgaobW_56GPkf4REtLj0NY7yczSPcdGl5G1v6uuUfzMZEay1Tr4ZFU5azLTM4mgm3-5D97c4gBRLkcUazb92Q8W2kXkzrSFmWOptmRwhheRw-gmAePiRKZLiFzaC_LSSTNPomVhNi6Z__xHrOv436EH7S06bh16v-OYQ1T5p0Bqd1lq9z7GvyZA">
         </div>
       </div>
       <!-- Bottom Content Grid (Aligned left & right around cutout) -->
-      <div class="relative z-20 mt-auto pt-72 lg:pt-96 pb-6 grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+      <div class="relative z-20 mt-auto pt-48 sm:pt-72 lg:pt-96 pb-6 grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-end">
         <!-- Left Column: Punchy Headline and CTAs -->
         <div class="md:col-span-5 max-w-sm lg:max-w-md">
-          <h1 class="font-condensed-bold text-3xl sm:text-4xl text-brand-charcoal leading-[1.0] tracking-tight">
+          <h1 class="font-condensed-bold text-2xl sm:text-3xl md:text-4xl text-brand-charcoal leading-[1.0] tracking-tight">
             COMEDY. CHAOS. GOOD STORIES.
           </h1>
-          <p class="mt-2 text-sm font-semibold text-brand-charcoal/80">
+          <p class="mt-2 text-xs sm:text-sm font-semibold text-brand-charcoal/80">
             Stand-up, live shows, and a little mango madness.
           </p>
-          <div class="mt-6 flex flex-wrap items-center gap-6">
-            <a class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white text-[11px] font-extrabold uppercase px-6 py-3 rounded-md transition-all shadow-sm active:scale-95"
+          <div class="mt-5 sm:mt-6 flex flex-wrap items-center gap-4 sm:gap-6">
+            <a class="inline-flex items-center gap-2 bg-brand-red hover:bg-brand-red-dark text-white text-[10px] sm:text-[11px] font-extrabold uppercase px-5 sm:px-6 py-2.5 sm:py-3 rounded-md transition-all shadow-sm active:scale-95"
               href="#contact">
-              <span class="">BOOK A SHOW</span>
-              <span class="text-sm font-sans leading-none">→</span>
+              <span>BOOK A SHOW</span>
+              <span class="text-xs sm:text-sm font-sans leading-none">→</span>
             </a>
-            <a class="inline-flex items-center gap-1.5 text-[11px] font-black uppercase text-brand-charcoal hover:text-brand-red tracking-wider border-b-2 border-brand-charcoal hover:border-brand-red pb-0.5 transition-colors"
+            <a class="inline-flex items-center gap-1.5 text-[10px] sm:text-[11px] font-black uppercase text-brand-charcoal hover:text-brand-red tracking-wider border-b-2 border-brand-charcoal hover:border-brand-red pb-0.5 transition-colors"
               href="#moments">
-              <span class="">VIEW GALLERY</span>
+              <span>VIEW GALLERY</span>
               <span class="text-xs font-sans">↗</span>
             </a>
           </div>
@@ -149,18 +161,18 @@
         <!-- Right Column: NEXT LIVE SHOW Widget -->
         <div class="md:col-span-5 lg:col-span-5">
           <div class="border-t border-brand-charcoal/80 pt-3">
-            <div class="text-[11px] font-black tracking-widest text-brand-charcoal uppercase mb-2.5">
+            <div class="text-[10px] sm:text-[11px] font-black tracking-widest text-brand-charcoal uppercase mb-2">
               NEXT LIVE SHOW
             </div>
-            <div class="flex items-start justify-between border-t border-brand-border pt-4">
+            <div class="flex flex-col sm:flex-row sm:items-start justify-between border-t border-brand-border pt-3 gap-3">
               <div class="space-y-1">
-                <div class="text-2xl font-black text-brand-charcoal tracking-tight font-sans leading-none">
+                <div class="text-xl sm:text-2xl font-black text-brand-charcoal tracking-tight font-sans leading-none">
                   11 OCTOBER 2026
                 </div>
                 <div class="text-xs font-bold text-brand-muted tracking-wide pt-0.5">
                   12:00 AM
                 </div>
-                <div class="pt-3 flex items-start gap-1.5 text-[11px] font-black uppercase leading-[1.25]">
+                <div class="pt-2 flex items-start gap-1.5 text-[11px] font-black uppercase leading-[1.25]">
                   <span class="text-brand-red text-xs mt-0.5 leading-none">📍</span>
                   <div class="flex flex-col">
                     <span class="text-brand-charcoal">JAI JINENDRA</span>
@@ -170,9 +182,9 @@
                 </div>
               </div>
               <!-- Right Number Badge -->
-              <div class="border-l border-brand-border pl-6 flex flex-col items-center justify-center text-center">
-                <span class="block font-poster text-7xl lg:text-8xl text-brand-red leading-none font-bold">1</span>
-                <span class="block font-poster text-base text-brand-red tracking-wider -mt-1">SHOW</span>
+              <div class="border-t sm:border-t-0 sm:border-l border-brand-border pt-2 sm:pt-0 pl-0 sm:pl-6 flex flex-row sm:flex-col items-center justify-start sm:justify-center gap-2 sm:gap-0">
+                <span class="font-poster text-5xl sm:text-7xl lg:text-8xl text-brand-red leading-none font-bold">1</span>
+                <span class="font-poster text-xs sm:text-base text-brand-red tracking-wider -mt-0.5">SHOW</span>
               </div>
             </div>
           </div>
@@ -619,99 +631,107 @@
 
   <!-- BEGIN: Secret Papa Entry Dashboard View -->
   <div id="papa-entry-view"
-    class="fixed inset-0 z-[100] hidden bg-[#ECECE6] text-[#111111] overflow-y-auto font-sans p-4 sm:p-8">
+    class="fixed inset-0 z-[100] hidden bg-[#ECECE6] text-[#111111] overflow-y-auto font-sans p-3 sm:p-8">
     <div class="max-w-7xl mx-auto">
 
       <!-- Header Bar -->
       <div
-        class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 border-[#111111] pb-6 mb-8">
+        class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b-2 border-[#111111] pb-5 sm:pb-6 mb-6 sm:mb-8">
         <div>
           <div class="flex items-center gap-2 mb-1">
             <span class="bg-[#D70F14] text-white text-[10px] font-black tracking-widest uppercase px-2.5 py-0.5">SECRET
               ROUTE</span>
             <span class="text-xs font-bold uppercase tracking-wider text-[#555555]">ADMIN DASHBOARD</span>
           </div>
-          <h1 class="font-poster text-4xl sm:text-6xl text-[#111111] leading-none uppercase">PAPA ENTRY</h1>
+          <h1 class="font-poster text-3xl sm:text-5xl lg:text-6xl text-[#111111] leading-none uppercase">PAPA ENTRY</h1>
           <p class="text-xs sm:text-sm font-semibold text-[#555555] mt-1">Live customer registration database &amp;
             EmailJS logs</p>
         </div>
 
-        <div class="flex flex-wrap items-center gap-3">
+        <div class="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-2 sm:gap-3 w-full md:w-auto">
           <button id="papa-open-scanner" type="button"
-            class="bg-[#D70F14] hover:bg-[#B81414] text-white text-xs font-black uppercase tracking-wider px-5 py-3 rounded-none transition-colors flex items-center gap-2 cursor-pointer active:scale-95 shadow-sm">
-            <span>📷</span> SCAN &amp; VERIFY TICKET
+            class="bg-[#D70F14] hover:bg-[#B81414] text-white text-[11px] sm:text-xs font-black uppercase tracking-wider px-3 sm:px-5 py-2.5 sm:py-3 rounded-none transition-colors flex items-center justify-center gap-1.5 cursor-pointer active:scale-95 shadow-sm col-span-2 sm:col-span-1">
+            <span>📷</span> SCAN &amp; VERIFY
           </button>
           <button id="papa-export-csv" type="button"
-            class="bg-[#111111] hover:bg-black text-white text-xs font-black uppercase tracking-wider px-5 py-3 rounded-none transition-colors flex items-center gap-2 cursor-pointer">
+            class="bg-[#111111] hover:bg-black text-white text-[11px] sm:text-xs font-black uppercase tracking-wider px-3 sm:px-5 py-2.5 sm:py-3 rounded-none transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
             <span>📥</span> EXPORT CSV
           </button>
           <button id="papa-clear-all" type="button"
-            class="bg-transparent hover:bg-red-100 text-[#D70F14] border border-[#D70F14] text-xs font-black uppercase tracking-wider px-4 py-3 rounded-none transition-colors cursor-pointer">
+            class="bg-transparent hover:bg-red-100 text-[#D70F14] border border-[#D70F14] text-[11px] sm:text-xs font-black uppercase tracking-wider px-3 sm:px-4 py-2.5 sm:py-3 rounded-none transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
             🗑 CLEAR ALL
           </button>
           <a href="#home" id="papa-exit-btn"
-            class="bg-[#111111] hover:bg-black text-white text-xs font-black uppercase tracking-wider px-5 py-3 rounded-none transition-colors flex items-center gap-2">
-            <span>←</span> EXIT PAPA ENTRY
+            class="bg-[#111111] hover:bg-black text-white text-[11px] sm:text-xs font-black uppercase tracking-wider px-3 sm:px-5 py-2.5 sm:py-3 rounded-none transition-colors flex items-center justify-center gap-1.5 col-span-2 sm:col-span-1">
+            <span>←</span> EXIT DASHBOARD
           </a>
         </div>
       </div>
 
-      <!-- Stats Summary -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
-        <div class="bg-white border border-[#111111] p-4 shadow-sm">
-          <span class="text-[10px] font-black tracking-widest uppercase text-[#555555] block mb-1">TOTAL
+      <!-- Stats Summary Grid -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
+        <div class="bg-white border border-[#111111] p-3.5 sm:p-4 shadow-sm">
+          <span class="text-[9px] sm:text-[10px] font-black tracking-widest uppercase text-[#555555] block mb-1">TOTAL
             REGISTERED</span>
-          <div id="papa-stat-count" class="font-poster text-4xl sm:text-5xl text-[#111111]">0</div>
+          <div id="papa-stat-count" class="font-poster text-3xl sm:text-4xl lg:text-5xl text-[#111111]">0</div>
         </div>
-        <div class="bg-white border border-[#111111] p-4 shadow-sm">
-          <span class="text-[10px] font-black tracking-widest uppercase text-[#555555] block mb-1">CHECKED-IN
+        <div class="bg-white border border-[#111111] p-3.5 sm:p-4 shadow-sm">
+          <span class="text-[9px] sm:text-[10px] font-black tracking-widest uppercase text-[#555555] block mb-1">CHECKED-IN
             (ADMITTED)</span>
-          <div id="papa-stat-admitted" class="font-poster text-4xl sm:text-5xl text-emerald-600">0</div>
+          <div id="papa-stat-admitted" class="font-poster text-3xl sm:text-4xl lg:text-5xl text-emerald-600">0</div>
         </div>
-        <div class="bg-white border border-[#111111] p-4 shadow-sm">
-          <span class="text-[10px] font-black tracking-widest uppercase text-[#555555] block mb-1">PENDING ENTRY</span>
-          <div id="papa-stat-pending" class="font-poster text-4xl sm:text-5xl text-[#D70F14]">0</div>
+        <div class="bg-white border border-[#111111] p-3.5 sm:p-4 shadow-sm">
+          <span class="text-[9px] sm:text-[10px] font-black tracking-widest uppercase text-[#555555] block mb-1">PENDING ENTRY</span>
+          <div id="papa-stat-pending" class="font-poster text-3xl sm:text-4xl lg:text-5xl text-[#D70F14]">0</div>
         </div>
-        <div class="bg-white border border-[#111111] p-4 shadow-sm">
-          <span class="text-[10px] font-black tracking-widest uppercase text-[#555555] block mb-1">UNIQUE EMAILS</span>
-          <div id="papa-stat-emails" class="font-poster text-4xl sm:text-5xl text-[#111111]">0</div>
+        <div class="bg-white border border-[#111111] p-3.5 sm:p-4 shadow-sm">
+          <span class="text-[9px] sm:text-[10px] font-black tracking-widest uppercase text-[#555555] block mb-1">UNIQUE EMAILS</span>
+          <div id="papa-stat-emails" class="font-poster text-3xl sm:text-4xl lg:text-5xl text-[#111111]">0</div>
         </div>
       </div>
 
       <!-- Search & Filter Controls -->
       <div
-        class="bg-white border border-[#111111] p-4 mb-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+        class="bg-white border border-[#111111] p-3.5 sm:p-4 mb-6 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 shadow-sm">
         <div class="w-full sm:w-96">
           <input type="text" id="papa-search-input" placeholder="Search by Name, Email, Mobile or Ticket ID..."
             class="w-full bg-[#ECECE6] border border-[#111111] py-2.5 px-3 text-xs font-bold text-[#111111] placeholder:text-gray-500 focus:outline-none focus:border-[#D70F14] rounded-none" />
         </div>
-        <div class="text-xs font-bold text-[#555555] uppercase tracking-wider">
+        <div class="text-xs font-bold text-[#555555] uppercase tracking-wider self-start sm:self-auto">
           Showing <span id="papa-filtered-count" class="text-[#111111] font-black">0</span> entries
         </div>
       </div>
 
-      <!-- Customer Database Table -->
-      <div class="bg-white border border-[#111111] overflow-x-auto shadow-sm">
-        <table class="w-full text-left border-collapse text-xs">
-          <thead>
-            <tr class="bg-[#111111] text-white uppercase text-[10px] tracking-widest">
-              <th class="py-3.5 px-4 font-black">#</th>
-              <th class="py-3.5 px-4 font-black">STATUS</th>
-              <th class="py-3.5 px-4 font-black">TICKET ID</th>
-              <th class="py-3.5 px-4 font-black">GUEST NAME</th>
-              <th class="py-3.5 px-4 font-black">EMAIL ADDRESS</th>
-              <th class="py-3.5 px-4 font-black">MOBILE NUMBER</th>
-              <th class="py-3.5 px-4 font-black">REGISTERED AT</th>
-              <th class="py-3.5 px-4 font-black text-right">ACTIONS</th>
-            </tr>
-          </thead>
-          <tbody id="papa-guests-tbody" class="divide-y divide-gray-200 text-[#111111] font-medium">
-            <!-- Rows dynamically generated -->
-          </tbody>
-        </table>
+      <!-- Customer Database Container -->
+      <div class="bg-white border border-[#111111] shadow-sm">
+        <!-- Desktop/Tablet Table View -->
+        <div class="hidden md:block overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead>
+              <tr class="bg-[#111111] text-white uppercase text-[10px] tracking-widest">
+                <th class="py-3.5 px-4 font-black">#</th>
+                <th class="py-3.5 px-4 font-black">STATUS</th>
+                <th class="py-3.5 px-4 font-black">TICKET ID</th>
+                <th class="py-3.5 px-4 font-black">GUEST NAME</th>
+                <th class="py-3.5 px-4 font-black">EMAIL ADDRESS</th>
+                <th class="py-3.5 px-4 font-black">MOBILE NUMBER</th>
+                <th class="py-3.5 px-4 font-black">REGISTERED AT</th>
+                <th class="py-3.5 px-4 font-black text-right">ACTIONS</th>
+              </tr>
+            </thead>
+            <tbody id="papa-guests-tbody" class="divide-y divide-gray-200 text-[#111111] font-medium">
+              <!-- Rows dynamically generated -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Mobile Responsive Cards View -->
+        <div id="papa-guests-cards" class="block md:hidden p-3 space-y-3">
+          <!-- Mobile Cards dynamically generated -->
+        </div>
 
         <!-- Empty State -->
-        <div id="papa-empty-state" class="hidden py-16 text-center">
+        <div id="papa-empty-state" class="hidden py-16 text-center px-4">
           <div class="font-poster text-3xl text-gray-400 uppercase mb-2">NO REGISTRATIONS FOUND</div>
           <p class="text-xs text-gray-500 font-semibold">Bookings made via the "BOOK A SHOW" modal will automatically
             appear here.</p>
@@ -1189,8 +1209,11 @@
 
       if (filteredCount) filteredCount.textContent = filtered.length;
 
+      const cardsContainer = document.getElementById('papa-guests-cards');
+
       if (filtered.length === 0) {
         if (tbody) tbody.innerHTML = '';
+        if (cardsContainer) cardsContainer.innerHTML = '';
         if (emptyState) emptyState.classList.remove('hidden');
         return;
       }
@@ -1231,6 +1254,73 @@
               </button>
             </td>
           </tr>
+        `).join('');
+      }
+
+      if (cardsContainer) {
+        cardsContainer.innerHTML = filtered.map((g, idx) => `
+          <div class="bg-white border border-[#111111] p-4 shadow-sm space-y-3">
+            <div class="flex items-center justify-between border-b border-gray-200 pb-2.5">
+              <div class="flex items-center gap-2">
+                <span class="font-mono text-xs font-bold text-gray-500">#${idx + 1}</span>
+                <span class="font-poster text-lg text-[#D70F14] tracking-wider">${g.ticket_id || 'N/A'}</span>
+              </div>
+              <div>
+                ${g.checked_in ? `
+                  <span class="inline-block bg-emerald-100 text-emerald-800 text-[10px] font-black uppercase px-2 py-0.5 border border-emerald-300">
+                    ✓ ADMITTED
+                  </span>
+                ` : `
+                  <span class="inline-block bg-amber-100 text-amber-800 text-[10px] font-black uppercase px-2 py-0.5 border border-amber-300">
+                    ⏳ PENDING
+                  </span>
+                `}
+              </div>
+            </div>
+
+            <div class="space-y-1.5 text-xs">
+              <div>
+                <span class="text-[9px] font-black uppercase tracking-widest text-[#555555] block">GUEST NAME</span>
+                <span class="font-bold uppercase text-[#111111] text-sm">${g.name || 'N/A'}</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <div>
+                  <span class="text-[9px] font-black uppercase tracking-widest text-[#555555] block">EMAIL</span>
+                  <span class="font-mono text-gray-800 break-all">${g.email || 'N/A'}</span>
+                </div>
+                <div>
+                  <span class="text-[9px] font-black uppercase tracking-widest text-[#555555] block">MOBILE</span>
+                  <span class="font-mono text-gray-800">${g.mobile || 'N/A'}</span>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-1">
+                <div>
+                  <span class="text-[9px] font-black uppercase tracking-widest text-[#555555] block">REGISTERED</span>
+                  <span class="text-gray-500 text-[11px] font-mono">${g.timestamp || '11 Oct 2026'}</span>
+                </div>
+                ${g.checked_in && g.checked_in_at ? `
+                  <div class="text-right">
+                    <span class="text-[9px] font-black uppercase tracking-widest text-emerald-600 block">ADMITTED AT</span>
+                    <span class="text-emerald-700 text-[10px] font-mono font-bold">${g.checked_in_at}</span>
+                  </div>
+                ` : ''}
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2 pt-2 border-t border-gray-100">
+              <button onclick="viewGuestTicket('${g.ticket_id}')" class="flex-1 bg-[#111111] hover:bg-black text-white text-[11px] font-black uppercase tracking-wider py-2 rounded-none text-center cursor-pointer active:scale-95">
+                🎫 TICKET
+              </button>
+              ${!g.checked_in ? `
+                <button onclick="markGuestAdmitted('${g.ticket_id}')" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white text-[11px] font-black uppercase tracking-wider py-2 rounded-none text-center cursor-pointer active:scale-95">
+                  ✅ ADMIT
+                </button>
+              ` : ''}
+              <button onclick="deleteGuestRecord('${g.ticket_id}', '${g.email}')" class="bg-transparent hover:bg-red-100 text-[#D70F14] border border-[#D70F14] text-[11px] font-black uppercase px-3 py-2 rounded-none cursor-pointer active:scale-95">
+                🗑 DEL
+              </button>
+            </div>
+          </div>
         `).join('');
       }
     }
@@ -1404,8 +1494,22 @@
       }
     };
 
-    // DOM Event Listeners for Scanner & Buttons
+    // DOM Event Listeners for Scanner & Buttons & Mobile Menu
     document.addEventListener('DOMContentLoaded', function () {
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileNavMenu = document.getElementById('mobile-nav-menu');
+
+      if (mobileMenuBtn && mobileNavMenu) {
+        mobileMenuBtn.addEventListener('click', function () {
+          mobileNavMenu.classList.toggle('hidden');
+        });
+        mobileNavMenu.querySelectorAll('a').forEach(a => {
+          a.addEventListener('click', function () {
+            mobileNavMenu.classList.add('hidden');
+          });
+        });
+      }
+
       const openScannerBtn = document.getElementById('papa-open-scanner');
       const closeScannerBtn = document.getElementById('close-qr-scanner-btn');
       const manualVerifyBtn = document.getElementById('manual-verify-btn');
